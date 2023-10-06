@@ -1,4 +1,12 @@
 <svg class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 18" id="file">
+    <g>
+      <path d="M12 17H2C1.44772 17 1 16.5523 1 16L1 2C1 1.44772 1.44772 1 2 1L7.56309 1C7.84165 1 8.10759 1.11619 8.29685 1.32059L12.7338 6.11246C12.9049 6.29731 13 6.53995 13 6.79187L13 16C13 16.5523 12.5523 17 12 17Z" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 7L8 7C7.44772 7 7 6.55228 7 6L7 1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 10L6 14L4 12" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </symbol>
+
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="search">
     <path d="M7.375 13.375C10.6887 13.375 13.375 10.6887 13.375 7.375C13.375 4.06129 10.6887 1.375 7.375 1.375C4.06129 1.375 1.375 4.06129 1.375 7.375C1.375 10.6887 4.06129 13.375 7.375 13.375Z"/><path d="M11.625 11.625L14.625 14.625"/>
   </symbol>
@@ -56,4 +64,6 @@
       <path d="M10 13H4a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM10 21H4a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM10 29H4a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM10 37H4a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z"></path>
     </g>
   </symbol>
+
+
 </svg>

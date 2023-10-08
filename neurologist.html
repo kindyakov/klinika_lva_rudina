@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<title>Невролог</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231008222128" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231008222128">
+</head>
+
+<body>
+  <div class='wrapper'>
+    <header class="header">
+	<div class="header__body">
+		<div class="header__container _container">
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item"><a href="about.html" class="header__link link-page">О клинике</a></li>
+					<li class="header__item"><a href="services.html" class="header__link link-page">Услуги</a></li>
+					<li class="header__item"><a href="prices.html" class="header__link link-page">Цены</a></li>
+					<li class="header__item"><a href="articles.html" class="header__link link-page">Статьи</a></li>
+					<li class="header__item"><a href="analyzes.html" class="header__link link-page">Анализы</a></li>
+					<li class="header__item"><a href="media.html" class="header__link link-page">Медиа</a></li>
+					<li class="header__item"><a href="stocks.html" class="header__link link-page">Акции</a></li>
+					<li class="header__item"><a href="patients.html" class="header__link link-page">Пациентам</a></li>
+					<li class="header__item"><a href="contacts.html" class="header__link link-page">Контакты</a></li>
+					<div class="header__list_close"></div>
+				</ul>
+				<div class="header-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+
+			<div class="header__content">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.png" alt="logo">
+					<span class="header__logo-text">Клиника<br> Льва Рудина</span>
+				</a>
+				<div class="header__content-controls">
+					<button class="header__visuallyImpaired header-controls-btn">
+						<svg class='icon'>
+							<use xlink:href='img/svg/sprite.svg#glasses'></use>
+						</svg>
+					</button>
+					<form class="header__form">
+						<input type="search" name="search" class="header__form_search" placeholder="поиск">
+						<span class="header__form_btn header-controls-btn">
+							<svg class='icon'>
+								<use xlink:href='img/svg/sprite.svg#search'></use>
+							</svg>
+						</span>
+					</form>
+				</div>
+
+				<a href="tel:74957269760" class="header__tel">+7 (495) 726-97-60</a>
+
+				<div class="header__messengers" data-da=".header__nav,767.98,first">
+					<a href="tel:74957269760" class="header__messengers_link">
+						<svg class='icon'>
+							<use xlink:href='img/svg/sprite.svg#tel'></use>
+						</svg>
+					</a>
+					<a href="" class="header__messengers_link">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="icon">
+							<path
+								d="M9.00001 0C13.9707 0 18 4.0293 18 8.99999C18 13.9707 13.9707 18 9.00001 18C7.40951 18.0026 5.847 17.5816 4.47301 16.7805L0.00361266 18L1.22041 13.5288C0.418596 12.1544 -0.00264454 10.5912 1.24922e-05 8.99999C1.24922e-05 4.0293 4.02931 0 9.00001 0ZM5.93281 4.77L5.75281 4.7772C5.63628 4.78429 5.52239 4.81491 5.41801 4.8672C5.32038 4.92248 5.23126 4.9916 5.15341 5.0724C5.04541 5.1741 4.98421 5.2623 4.91851 5.3478C4.58562 5.78061 4.40638 6.31198 4.40911 6.858C4.41091 7.299 4.52611 7.72829 4.70611 8.12969C5.07421 8.94149 5.67991 9.80099 6.47911 10.5975C6.67171 10.7892 6.86071 10.9818 7.06411 11.1609C8.05716 12.0352 9.24053 12.6657 10.5201 13.0023L11.0313 13.0806C11.1978 13.0896 11.3643 13.077 11.5317 13.0689C11.7938 13.0554 12.0498 12.9844 12.2814 12.861C12.3993 12.8003 12.5143 12.7342 12.6261 12.663C12.6261 12.663 12.6648 12.6378 12.7386 12.582C12.8601 12.492 12.9348 12.4281 13.0356 12.3228C13.1103 12.2454 13.1751 12.1545 13.2246 12.051C13.2948 11.9043 13.365 11.6244 13.3938 11.3913C13.4154 11.2131 13.4091 11.1159 13.4064 11.0556C13.4028 10.9593 13.3227 10.8594 13.2354 10.8171L12.7116 10.5822C12.7116 10.5822 11.9286 10.2411 11.4498 10.0233C11.3997 10.0014 11.346 9.98891 11.2914 9.98639C11.2298 9.98007 11.1676 9.987 11.1089 10.0067C11.0503 10.0264 10.9965 10.0585 10.9512 10.1007C10.9467 10.0989 10.8864 10.1502 10.2357 10.9386C10.1984 10.9888 10.1469 11.0267 10.0879 11.0475C10.0289 11.0684 9.96509 11.0712 9.90451 11.0556C9.84588 11.0399 9.78843 11.02 9.7326 10.9962C9.62101 10.9494 9.58231 10.9314 9.50581 10.899C8.98927 10.6736 8.51103 10.369 8.08831 9.99629C7.97491 9.89729 7.86961 9.78929 7.76161 9.68489C7.40754 9.3458 7.09896 8.9622 6.84361 8.54369L6.79051 8.45819C6.75237 8.40074 6.72153 8.33877 6.69871 8.27369C6.66451 8.14139 6.75361 8.03519 6.75361 8.03519C6.75361 8.03519 6.97231 7.79579 7.07401 7.66619C7.17301 7.54019 7.25671 7.4178 7.31071 7.3305C7.41691 7.1595 7.45021 6.984 7.39441 6.8481C7.14241 6.2325 6.88141 5.6196 6.61321 5.0112C6.56011 4.8906 6.40261 4.8042 6.25951 4.7871C6.21091 4.7817 6.16231 4.7763 6.11371 4.7727C5.99284 4.76669 5.87173 4.76789 5.75101 4.7763L5.93191 4.7691L5.93281 4.77Z" />
+						</svg>
+					</a>
+					<a href="" class="header__messengers_link">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="icon">
+							<path
+								d="M9 0C4.032 0 0 4.032 0 9C0 13.968 4.032 18 9 18C13.968 18 18 13.968 18 9C18 4.032 13.968 0 9 0ZM13.176 6.12C13.041 7.542 12.456 10.998 12.159 12.591C12.033 13.266 11.781 13.491 11.547 13.518C11.025 13.563 10.629 13.176 10.125 12.843C9.333 12.321 8.883 11.997 8.118 11.493C7.227 10.908 7.803 10.584 8.316 10.062C8.451 9.927 10.755 7.83 10.8 7.641C10.8063 7.61237 10.8054 7.58265 10.7976 7.55442C10.7897 7.52619 10.7751 7.5003 10.755 7.479C10.701 7.434 10.629 7.452 10.566 7.461C10.485 7.479 9.225 8.316 6.768 9.972C6.408 10.215 6.084 10.341 5.796 10.332C5.472 10.323 4.86 10.152 4.401 9.999C3.834 9.819 3.393 9.72 3.429 9.405C3.447 9.243 3.672 9.081 4.095 8.91C6.723 7.767 8.469 7.011 9.342 6.651C11.844 5.607 12.357 5.427 12.699 5.427C12.771 5.427 12.942 5.445 13.05 5.535C13.14 5.607 13.167 5.706 13.176 5.778C13.167 5.832 13.185 5.994 13.176 6.12Z" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+    <main class='main'>
+      <section class="intro section section-bg">
+        <div class="intro__container _container">
+          <div class="intro__body">
+            <div class="intro__content">
+              <ul class="path">
+                <li class="path__li">
+                  <a href="index.html" class="path__link">Главная</a>
+                </li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                  <path d="M1 1L5 5L1 9" stroke="#8F98A5" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <li class="path__li">
+                  <a href="index.html" class="path__link">Услуги</a>
+                </li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                  <path d="M1 1L5 5L1 9" stroke="#8F98A5" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <li class="path__li">
+                  <a href="neurologist.html" class="path__link">Невролог</a>
+                </li>
+              </ul>
+              <h1 class="intro__title h1">Прием<br> врача-невролога </h1>
+              <ul class="intro__list">
+                <li class="intro__item">
+                  <img src="img/icons/icon-6.png" alt="icon">
+                  <span>Точная диагностика</span>
+                </li>
+                <li class="intro__item">
+                  <img src="img/icons/intro-list-2.png" alt="icon">
+                  <span>Авторские методики лечения</span>
+                </li>
+                <li class="intro__item">
+                  <img src="img/icons/intro-list-3.png" alt="icon">
+                  <span>Врачи с учёными степенями
+                    и государственными наградами</span>
+                </li>
+                <li class="intro__item">
+                  <img src="img/icons/intro-list-4.png" alt="icon">
+                  <span>Клиника в центре Москвы</span>
+                </li>
+              </ul>
+            </div>
+            <div class="intro__right">
+              <div class="intro__wpImg">
+                <img src="img/olga-shtang.png" alt="Штанг Ольга Михайловна">
+              </div>
+              <div class="intro__right_block">
+                <h2 class="intro__right_title bold">
+                  Штанг Ольга Михайловна
+                  <img src="img/icons/intro-decor.png" alt="intro-decor">
+                </h2>
+                <span class="intro__right_post">Врач невролог</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="voice section">
+        <div class="voice__container _container">
+          <div class="voice__body">
+            <h2 class="voice__title h2">
+              <img src="img/icons/title-decor.png" alt="title-decor">
+              Голос - тончайший инструмент
+            </h2>
+            <p class="voice__subtitle">И он требует к себе внимательного отношения!</p>
+            <div class="voice__content neurologist-page align-items-start">
+              <div class="voice__card max-w-550">
+                <h4 class="voice__card_title">Поможем при симпотомах:</h4>
+                <ul class="voice__card_list">
+                  <li class="voice__card_li">
+                    <svg class='icon'>
+                      <use xlink:href='img/svg/sprite.svg#check'></use>
+                    </svg>
+                    <span>Боль (дискомфорт) в спине или пояснице</span>
+                  </li>
+                  <li class="voice__card_li">
+                    <svg class='icon'>
+                      <use xlink:href='img/svg/sprite.svg#check'></use>
+                    </svg>
+                    <span>Боль в шее</span>
+                  </li>
+                  <li class="voice__card_li">
+                    <svg class='icon'>
+                      <use xlink:href='img/svg/sprite.svg#check'></use>
+                    </svg>
+                    <span>Головная боль, головокружение</span>
+                  </li>
+                  <li class="voice__card_li">
+                    <svg class='icon'>
+                      <use xlink:href='img/svg/sprite.svg#check'></use>
+                    </svg>
+                    <span>Недомогание, быстрая утомляемость</span>
+                  </li>
+                  <li class="voice__card_li">
+                    <svg class='icon'>
+                      <use xlink:href='img/svg/sprite.svg#check'></use>
+                    </svg>
+                    <span>Бессоница, нарушения сна</span>
+                  </li>
+                  <li class="voice__card_li">
+                    <svg class='icon'>
+                      <use xlink:href='img/svg/sprite.svg#check'></use>
+                    </svg>
+                    <span>Неврозы и нервные тики</span>
+                  </li>
+                  <li class="voice__card_li">
+                    <svg class='icon'>
+                      <use xlink:href='img/svg/sprite.svg#check'></use>
+                    </svg>
+                    <span>Снижение чувствительности в любой области тела</span>
+                  </li>
+                  <img src="img/icons/decor-5.png" alt="decor" class="img-decor">
+                </ul>
+                <button class="voice__card_button button hover">Записаться</button>
+              </div>
+              <div class="voice__card-form max-w-600">
+                <h4 class="record__title">Записаться на прием</h4>
+                <p class="voice__card-form_text">Врач проведет осмотр, назначит диагностику, определит причину боли,
+                  выберет лечение
+                  и поможет избавиться от дискомфорта.</p>
+                <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+                <div class="voice__card-form_wpForm">
+                  <form class="record__form form-record" data-form="record">
+                    <div class="record__form_row">
+                      <div class="record__form_wpInput wpInput">
+                        <input type="text" name="name" class="record__form_input input" placeholder="Имя">
+                      </div>
+                      <div class="record__form_wpInput wpInput">
+                        <input type="tel" name="phone" class="record__form_input input" inputmode="tel"
+                          placeholder="Телефон">
+                      </div>
+                    </div>
+                    <button type="submit" class="record__form_button button hover">Записаться</button>
+                    <label class="record__form_bottom wpCheckbox-label">
+                      <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+                      <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+                      <p class="record__form_text">согласен на обработку персональных данных</p>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recovering section">
+        <div class="recovering__container _container">
+          <div class="recovering__body">
+            <h2 class="recovering__title h2">
+              <img src="img/icons/title-decor.png" alt="title-decor">
+              С нами выздоравливают в 1.5 раза быстрее
+            </h2>
+
+            <div class="recovering__content">
+              <img src="img/services-bg.png" alt="services-bg" class="recovering__bg img-decors bg-1">
+              <img src="img/services-bg.png" alt="services-bg" class="recovering__bg img-decors bg-2">
+              <div class="recovering__item">
+                <div class="recovering__item_wpImg">
+                  <img src="img/recovering-2.png" alt="recovering">
+                </div>
+                <div class="recovering__item_content">
+                  <h4 class="recovering__item_title">Реальный опыт</h4>
+                  <p class="recovering__item_text">Не тратим ваше время и деньги на ненужные анализы или излишнюю
+                    диагностику. Быстро и точно ставим диагноз, определяем эффективное лечение.</p>
+                </div>
+              </div>
+              <div class="recovering__item">
+                <div class="recovering__item_wpImg">
+                  <img src="img/recovering-3.png" alt="recovering">
+                </div>
+                <div class="recovering__item_content">
+                  <h4 class="recovering__item_title">Авторские методики</h4>
+                  <p class="recovering__item_text">За многие годы практики сформировали уникальные методики лечения.
+                    С их помощью наши пациенты выздоравливают быстрее, с минимальным дискомфортом.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="record section">
+        <div class="record__container _container">
+          <div class="record__body">
+            <div class="record__content">
+              <div class="record__block">
+                <h4 class="record__title">Записаться на прием</h4>
+                <span>Вы можете записаться по телефону</span>
+                <div class="record__block-bottom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#tel'></use>
+                  </svg>
+                  <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+                </div>
+              </div>
+              <form class="record__form form-record" data-form="record">
+                <div class="record__form_info">
+                  <img src="img/icons/tabler.png" alt="tabler">
+                  <span>через форму онлайн-записи</span>
+                </div>
+                <div class="record__form_row">
+                  <div class="record__form_wpInput wpInput">
+                    <input type="text" name="name" class="record__form_input input" placeholder="Имя">
+                  </div>
+                  <div class="record__form_wpInput wpInput">
+                    <input type="tel" name="phone" class="record__form_input input" inputmode="tel"
+                      placeholder="Телефон">
+                  </div>
+                </div>
+                <button type="submit" class="record__form_button button hover">Записаться</button>
+                <label class="record__form_bottom wpCheckbox-label">
+                  <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+                  <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+                  <p class="record__form_text">согласен на обработку персональных данных</p>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialists section section-bg">
+        <div class="specialists__container _container">
+          <div class="specialists__body">
+            <h2 class="specialists__title h2">
+              <img src="img/icons/title-decor.png" alt="title-decor">
+              Приём ведет
+            </h2>
+            <div class="specialists__content">
+              <div class="specialists__specialist">
+                <div class="specialists__specialist_wpImg" data-da=".specialists__specialist_content,991.98,first">
+                  <img src="img/specialist-3.png" alt="Рудин Лев Борисович">
+                </div>
+                <div class="specialists__specialist_content">
+                  <h3 class="specialists__specialist_title">
+                    <img src="img/icons/intro-decor.png" alt="intro-decor">
+                    Штанг<br> Ольга Михайловна
+                  </h3>
+                  <div class="specialists__specialist_flex">
+                    <div class="specialists__specialist_flex-column">
+                      <ul class="specialists__specialist_list-left">
+                        <li class="specialists__specialist_item-left">
+                          <img src="img/icons/icon-7.png" alt="icon">
+                          <div class="specialists__specialist_item-content">
+                            <p>Невролог</p>
+                          </div>
+                        </li>
+                        <li class="specialists__specialist_item-left">
+                          <img src="img/icons/intro-list-3.png" alt="icon">
+                          <div class="specialists__specialist_item-content">
+                            <p>Кандидат медицинских наук</p>
+                          </div>
+                        </li>
+                        <li class="specialists__specialist_item-left">
+                          <img src="img/icons/intro-list-5.png" alt="icon">
+                          <div class="specialists__specialist_item-content">
+                            <p>Заведующий yеврологическим отделением КДЦ МОНИКИ им.М.Ф.Владимирского</p>
+                          </div>
+                        </li>
+                        <li class="specialists__specialist_item-left">
+                          <img src="img/icons/icon-8.png" alt="icon">
+                          <div class="specialists__specialist_item-content">
+                            <p>Стаж работы 25 лет</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <a href="" class="specialists__specialist_button button hover">Подробнее о враче</a>
+                    </div>
+                    <div class="specialists__specialist_flex-column">
+                      <h6 class="specialists__specialist_list-title method">Владеет методиками</h6>
+                      <ul class="specialists__specialist_list-right">
+                        <li class="specialists__specialist_item-right">
+                          <img src="img/icons/check.png" alt="check">
+                          <p>Ботулинотерапия</p>
+                        </li>
+                        <li class="specialists__specialist_item-right">
+                          <img src="img/icons/check.png" alt="check">
+                          <p>Фармакотерапия</p>
+                        </li>
+                        <li class="specialists__specialist_item-right">
+                          <img src="img/icons/check.png" alt="check">
+                          <p>Кинезио-тейпирование</p>
+                        </li>
+                        <li class="specialists__specialist_item-right">
+                          <img src="img/icons/check.png" alt="check">
+                          <p>Блокады</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices section">
+        <div class="prices__container _container">
+          <h2 class="prices__title h2">
+            <img src="img/icons/title-decor.png" alt="title-decor">
+            Цены
+          </h2>
+          <div class="prices__body">
+
+            <ul class="prices__ul">
+              <li class="prices__li">
+                <img src="img/icons/icon-1.png" alt="icon">
+                <p>В приоритете результат, а не количество посещений</p>
+              </li>
+              <li class="prices__li">
+                <img src="img/icons/icon-2.png" alt="icon">
+                <p>Назначаем только необходимые процедуры</p>
+              </li>
+              <li class="prices__li">
+                <img src="img/icons/icon-3.png" alt="icon">
+                <p>Используем самые современные методы диагностики и лечения</p>
+              </li>
+            </ul>
+
+            <div class="prices__content">
+              <div class="prices__card">
+                <div class="prices__card_wpImg">
+                  <img src="img/prices-1.jpg" alt="prices-img">
+                </div>
+                <div class="prices__card_content">
+                  <h4 class="prices__card_title">Первичный прием</h4>
+                  <div class="prices__card_wpText">
+                    <p class="prices__card_text">Осмотр на основе жалоб. Обычно проходит без использования специального
+                      оборудования.</p>
+                    <p class="prices__card_text">При необходимости проводится дополнительная аппаратная диагностика.
+                      Могут
+                      быть назначены анализы. Все процедуры проходят в клинике в день приема.</p>
+                  </div>
+                  <div class="prices__card_bottom">
+                    <span class="prices__card_price">от<b>3 500</b>₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="prices__card">
+                <div class="prices__card_wpImg">
+                  <img src="img/prices-3.jpg" alt="prices-img">
+                </div>
+                <div class="prices__card_content">
+                  <h4 class="prices__card_title">Повторный прием</h4>
+                  <div class="prices__card_wpText">
+                    <p class="prices__card_text">Рекомендации и корректировки по лечению.
+                      Как на основе результатов анализов, так и в результате повторного осмотра после начала лечения.
+                    </p>
+                    <p class="prices__card_text">Могут быть проведены дополнительные диагностические процедуры, лечебные
+                      манипуляции.</p>
+                  </div>
+                  <div class="prices__card_bottom">
+                    <span class="prices__card_price">от<b>3 000</b>₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="record section">
+        <div class="record__container _container">
+          <div class="record__body">
+            <div class="record__content">
+              <div class="record__block">
+                <h4 class="record__title">Записаться на прием</h4>
+                <span>Вы можете записаться по телефону</span>
+                <div class="record__block-bottom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#tel'></use>
+                  </svg>
+                  <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+                </div>
+              </div>
+              <form class="record__form form-record" data-form="record">
+                <div class="record__form_info">
+                  <img src="img/icons/tabler.png" alt="tabler">
+                  <span>через форму онлайн-записи</span>
+                </div>
+                <div class="record__form_row">
+                  <div class="record__form_wpInput wpInput">
+                    <input type="text" name="name" class="record__form_input input" placeholder="Имя">
+                  </div>
+                  <div class="record__form_wpInput wpInput">
+                    <input type="tel" name="phone" class="record__form_input input" inputmode="tel"
+                      placeholder="Телефон">
+                  </div>
+                </div>
+                <button type="submit" class="record__form_button button hover">Записаться</button>
+                <label class="record__form_bottom wpCheckbox-label">
+                  <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+                  <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+                  <p class="record__form_text">согласен на обработку персональных данных</p>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Слайдер -->
+
+      <section class="reviews section section-bg">
+        <div class="reviews__container _container">
+          <div class="reviews__body">
+            <h2 class="reviews__title h2">
+              <img src="img/icons/title-decor.png" alt="title-decor">
+              Реальные отзывы клиентов
+            </h2>
+            <div class="reviews__content">
+              <div class="reviews__feedback">
+                <div class="reviews__feedback_top">
+                  <div class="reviews__feedback_picture">
+                    <img src="img/picture-1.png" alt="picture">
+                  </div>
+                  <div class="reviews__feedback_yandex">
+                    <a href="">Отзыв Яндекс</a>
+                    <div class="reviews__feedback_rating">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__feedback_content">
+                  <span class="reviews__feedback_name">Татьяна Метлина</span>
+                  <p class="reviews__feedback_text">Прекрасная клиника. Очень удобно расположена ( рядом с Казанским
+                    вокзалом, 4 минуты от 13-го выхода из метро). Кругом чистота и порядок, очень хорошие врачи.</p>
+                </div>
+              </div>
+              <div class="reviews__feedback">
+                <div class="reviews__feedback_top">
+                  <div class="reviews__feedback_picture">
+                    <img src="img/picture-2.png" alt="picture">
+                  </div>
+                  <div class="reviews__feedback_yandex">
+                    <a href="">Отзыв Яндекс</a>
+                    <div class="reviews__feedback_rating">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <path
+                          d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                          fill="#EDBB6F" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__feedback_content">
+                  <span class="reviews__feedback_name">Тихон К.</span>
+                  <p class="reviews__feedback_text">Попал на прием к Льву Борисовичу с проблемами, которые не могли
+                    диагностировать несколько лет. Диагноз получился серьезный, зато появилась ясность в лечении и
+                    возможность вернутся к вокалу. За что я очень благодарен Льву Борисовичу. Стоимость серьезная, но
+                    бесплатно и "задешево" я уже пытался - ничего не получалось. ) Рекомендую! </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map section">
+        <div class="map__container">
+          <h2 class="map__title h2">
+            <img src="img/icons/title-decor.png" alt="title-decor">
+            Вы всегда легко к нам доберетесь
+          </h2>
+          <div class="map__body">
+            <div class="map__content">
+              <div class="map__wpText">
+                <img src="img/icons/decor-3.png" alt="decor" class="decor">
+                <span class="span">Наш адрес:</span>
+                <address class="map__address">Москва,<br> Басманный переулок<br> дом 9</address>
+                <div class="map__address-info">
+                  <img src="img/icons/metro.png" alt="metro">
+                  <span>300м от станции метро
+                    “Комсомольская”</span>
+                </div>
+                <ul class="map__schedule">
+                  <li>Пн-Сб: 10:00 – 22:00</li>
+                  <li>Воскресенье: Под запись </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="map__yandex">
+              <img src="img/map.png" alt="map">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="record section">
+        <div class="record__container _container">
+          <div class="record__body">
+            <div class="record__content">
+              <div class="record__block">
+                <h4 class="record__title">Записаться на прием</h4>
+                <span>Вы можете записаться по телефону</span>
+                <div class="record__block-bottom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#tel'></use>
+                  </svg>
+                  <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+                </div>
+              </div>
+              <form class="record__form form-record" data-form="record">
+                <div class="record__form_info">
+                  <img src="img/icons/tabler.png" alt="tabler">
+                  <span>через форму онлайн-записи</span>
+                </div>
+                <div class="record__form_row">
+                  <div class="record__form_wpInput wpInput">
+                    <input type="text" name="name" class="record__form_input input" placeholder="Имя">
+                  </div>
+                  <div class="record__form_wpInput wpInput">
+                    <input type="tel" name="phone" class="record__form_input input" inputmode="tel"
+                      placeholder="Телефон">
+                  </div>
+                </div>
+                <button type="submit" class="record__form_button button hover">Записаться</button>
+                <label class="record__form_bottom wpCheckbox-label">
+                  <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+                  <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+                  <p class="record__form_text">согласен на обработку персональных данных</p>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__body">
+			<div class="footer__top">
+				<a href="index.html" class="footer__logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<nav class="footer__nav">
+					<ul class="footer__list">
+						<li class="footer__li">
+							<span>Информация</span>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">О клинике</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Цены</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Анализы</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Медиа</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Акции</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Пациентам</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Контакты</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__li">
+							<span>Услуги</span>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Фониатрия</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Отоларингология</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Терапия</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Эндокринология</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">УЗИ</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Неврология</a>
+						</li>
+						<li class="footer__li">
+							<a href="" class="footer__link">Анализы </a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="footer__info-block">
+					<a href="tel:74957269760" class="footer__tel">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 15" class="icon">
+							<path
+								d="M4.09729 1.5H2.26316C1.56554 1.5 1 2.06554 1 2.76316C1 8.69295 5.80705 13.5 11.7368 13.5C12.4345 13.5 13 12.9345 13 12.2368V10.4027C13 9.8575 12.6681 9.36723 12.1619 9.16474L10.4047 8.4619C9.95003 8.28001 9.43221 8.36205 9.05598 8.67557L8.60207 9.05383C8.0723 9.49531 7.2933 9.45997 6.80568 8.97235L5.52765 7.69432C5.04003 7.2067 5.00469 6.4277 5.44617 5.89793L5.82443 5.44402C6.13795 5.06779 6.21999 4.54997 6.0381 4.09525L5.33526 2.33815C5.13277 1.83193 4.6425 1.5 4.09729 1.5Z"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<span>+7 (495) 726-97-60</span></a>
+					<a href="mailto:info@levrudin.ru" class="footer__mail">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" class="icon">
+							<path
+								d="M14.2222 1.5H1.77778C1.34822 1.5 1 1.8198 1 2.21429V10.7857C1 11.1802 1.34822 11.5 1.77778 11.5H14.2222C14.6518 11.5 15 11.1802 15 10.7857V2.21429C15 1.8198 14.6518 1.5 14.2222 1.5Z"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M1 2L8 6L15 2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<span>info@levrudin.ru</span>
+					</a>
+					<address class="footer__address">Москва, Басманный переулок дом 9</address>
+					<span class="footer__schedule">Пн-Сб: 10:00 - 22:00, Вс: под запись</span>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="footer__wpButton">
+					<button class="footer__button button btn-visually-impaired">
+						<svg class='icon'>
+							<use xlink:href='img/svg/sprite.svg#glasses'></use>
+						</svg>
+						<span>Версия для слабовидящих</span>
+					</button>
+					<button class="footer__button button hover">Записаться на прием</button>
+				</div>
+
+				<ul class="footer__messengers">
+					<li class="footer__messengers_li">
+						<a href="" class="footer__messengers_link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" class="icon">
+								<path
+									d="M9.80387 11.5C3.65397 11.5 0.146159 7.37087 0 0.5H3.08057C3.18176 5.54304 5.45284 7.67918 7.25172 8.11962V0.5H10.1524V4.84935C11.9288 4.66216 13.7951 2.68018 14.4247 0.5H17.3254C17.0882 1.6307 16.6152 2.7013 15.9362 3.64482C15.2572 4.58835 14.3867 5.3845 13.3791 5.98348C14.5038 6.53079 15.4972 7.30546 16.2937 8.25637C17.0902 9.20728 17.6718 10.3128 18 11.5H14.807C14.5124 10.4688 13.9135 9.54578 13.0855 8.84651C12.2575 8.14723 11.2372 7.70286 10.1524 7.56907V11.5H9.80387Z" />
+							</svg>
+						</a>
+					</li>
+					<li class="footer__messengers_li">
+						<a href="" class="footer__messengers_link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" class="icon">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M17.8252 0.428213C18.6819 0.658872 19.3574 1.33407 19.5879 2.19065C20.0164 3.75522 19.9999 7.01648 19.9999 7.01648C19.9999 7.01648 19.9999 10.2611 19.5881 11.8258C19.3574 12.6823 18.682 13.3576 17.8252 13.5881C16.2602 14 9.99996 14 9.99996 14C9.99996 14 3.75609 14 2.17467 13.5718C1.3179 13.3411 0.642545 12.6658 0.411833 11.8094C0 10.2611 0 7 0 7C0 7 0 3.75522 0.411833 2.19065C0.642392 1.33422 1.33438 0.642396 2.17452 0.41189C3.73961 0 9.99981 0 9.99981 0C9.99981 0 16.2602 0 17.8252 0.428213ZM13 7L8 10V4L13 7Z" />
+							</svg>
+						</a>
+					</li>
+					<li class="footer__messengers_li">
+						<a href="" class="footer__messengers_link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="icon">
+								<path
+									d="M9.00001 0C13.9707 0 18 4.0293 18 8.99999C18 13.9707 13.9707 18 9.00001 18C7.40951 18.0026 5.847 17.5816 4.47301 16.7805L0.00361266 18L1.22041 13.5288C0.418596 12.1544 -0.00264454 10.5912 1.24922e-05 8.99999C1.24922e-05 4.0293 4.02931 0 9.00001 0ZM5.93281 4.77L5.75281 4.7772C5.63628 4.78429 5.52239 4.81491 5.41801 4.8672C5.32038 4.92248 5.23126 4.9916 5.15341 5.0724C5.04541 5.1741 4.98421 5.2623 4.91851 5.3478C4.58562 5.78061 4.40638 6.31198 4.40911 6.858C4.41091 7.299 4.52611 7.72829 4.70611 8.12969C5.07421 8.94149 5.67991 9.80099 6.47911 10.5975C6.67171 10.7892 6.86071 10.9818 7.06411 11.1609C8.05716 12.0352 9.24053 12.6657 10.5201 13.0023L11.0313 13.0806C11.1978 13.0896 11.3643 13.077 11.5317 13.0689C11.7938 13.0554 12.0498 12.9844 12.2814 12.861C12.3993 12.8003 12.5143 12.7342 12.6261 12.663C12.6261 12.663 12.6648 12.6378 12.7386 12.582C12.8601 12.492 12.9348 12.4281 13.0356 12.3228C13.1103 12.2454 13.1751 12.1545 13.2246 12.051C13.2948 11.9043 13.365 11.6244 13.3938 11.3913C13.4154 11.2131 13.4091 11.1159 13.4064 11.0556C13.4028 10.9593 13.3227 10.8594 13.2354 10.8171L12.7116 10.5822C12.7116 10.5822 11.9286 10.2411 11.4498 10.0233C11.3997 10.0014 11.346 9.98891 11.2914 9.98639C11.2298 9.98007 11.1676 9.987 11.1089 10.0067C11.0503 10.0264 10.9965 10.0585 10.9512 10.1007C10.9467 10.0989 10.8864 10.1502 10.2357 10.9386C10.1984 10.9888 10.1469 11.0267 10.0879 11.0475C10.0289 11.0684 9.96509 11.0712 9.90451 11.0556C9.84588 11.0399 9.78843 11.02 9.7326 10.9962C9.62101 10.9494 9.58231 10.9314 9.50581 10.899C8.98927 10.6736 8.51103 10.369 8.08831 9.99629C7.97491 9.89729 7.86961 9.78929 7.76161 9.68489C7.40754 9.3458 7.09896 8.9622 6.84361 8.54369L6.79051 8.45819C6.75237 8.40074 6.72153 8.33877 6.69871 8.27369C6.66451 8.14139 6.75361 8.03519 6.75361 8.03519C6.75361 8.03519 6.97231 7.79579 7.07401 7.66619C7.17301 7.54019 7.25671 7.4178 7.31071 7.3305C7.41691 7.1595 7.45021 6.984 7.39441 6.8481C7.14241 6.2325 6.88141 5.6196 6.61321 5.0112C6.56011 4.8906 6.40261 4.8042 6.25951 4.7871C6.21091 4.7817 6.16231 4.7763 6.11371 4.7727C5.99284 4.76669 5.87173 4.76789 5.75101 4.7763L5.93191 4.7691L5.93281 4.77Z">
+								</path>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__messengers_li">
+						<a href="" class="footer__messengers_link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="icon">
+								<path
+									d="M9 0C4.032 0 0 4.032 0 9C0 13.968 4.032 18 9 18C13.968 18 18 13.968 18 9C18 4.032 13.968 0 9 0ZM13.176 6.12C13.041 7.542 12.456 10.998 12.159 12.591C12.033 13.266 11.781 13.491 11.547 13.518C11.025 13.563 10.629 13.176 10.125 12.843C9.333 12.321 8.883 11.997 8.118 11.493C7.227 10.908 7.803 10.584 8.316 10.062C8.451 9.927 10.755 7.83 10.8 7.641C10.8063 7.61237 10.8054 7.58265 10.7976 7.55442C10.7897 7.52619 10.7751 7.5003 10.755 7.479C10.701 7.434 10.629 7.452 10.566 7.461C10.485 7.479 9.225 8.316 6.768 9.972C6.408 10.215 6.084 10.341 5.796 10.332C5.472 10.323 4.86 10.152 4.401 9.999C3.834 9.819 3.393 9.72 3.429 9.405C3.447 9.243 3.672 9.081 4.095 8.91C6.723 7.767 8.469 7.011 9.342 6.651C11.844 5.607 12.357 5.427 12.699 5.427C12.771 5.427 12.942 5.445 13.05 5.535C13.14 5.607 13.167 5.706 13.176 5.778C13.167 5.832 13.185 5.994 13.176 6.12Z">
+								</path>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__under">
+				<span>2022 © Клиника Льва Рудина</span>
+				<a href="">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</div>
+</footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231008222128"></script>
+<script src="assets/libs/fslightbox.js?_v=20231008222128"></script>
+<script src="js/app.min.js?_v=20231008222128"></script>
+</body>
+
+</html>

@@ -6,8 +6,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231009122222" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20231009122222">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231011212714" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231011212714">
 </head>
 
 <body>
@@ -59,11 +59,11 @@
 				<a href="tel:74957269760" class="header__tel">+7 (495) 726-97-60</a>
 
 				<div class="header__messengers" data-da=".header__nav,767.98,first">
-					<a href="tel:74957269760" class="header__messengers_link">
+					<button class="header__messengers_link modal-btn-active">
 						<svg class='icon'>
 							<use xlink:href='img/svg/sprite.svg#tel'></use>
 						</svg>
-					</a>
+					</button>
 					<a href="" class="header__messengers_link">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="icon">
 							<path
@@ -550,158 +550,160 @@
       <!-- Слайдер -->
 
       <section class="gallery">
-        <div class="gallery__body">
-          <h2 class="gallery__title h2">
-            <img src="img/icons/title-decor.png" alt="title-decor">
-            Помогаем настоящим мастерам голоса
-          </h2>
-          <p class="gallery__subtitle">Под нашим наблюдением находятся звезды оперы, эстрады, театра и кино, известные
-            предприниматели,
-            телеведущие, ученые, педагоги и не публичные люди.</p>
-          <div class="gallery__content">
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-1.png">
-              <img src="img/gallery-1.png" alt="gallery">
-              <span class="gallery__tile-name">Валерий Меладзе</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-2.png">
-              <img src="img/gallery-2.png" alt="gallery">
-              <span class="gallery__tile-name">Пелагея</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-3.png">
-              <img src="img/gallery-3.png" alt="gallery">
-              <span class="gallery__tile-name">Григорий Лепс</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-4.png">
-              <img src="img/gallery-4.png" alt="gallery">
-              <span class="gallery__tile-name">Филипп Киркоров</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-5.png">
-              <img src="img/gallery-5.png" alt="gallery">
-              <span class="gallery__tile-name">Михаил Шуфутинский</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-6.png">
-              <img src="img/gallery-6.png" alt="gallery">
-              <span class="gallery__tile-name">Валерий Леонтьев</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-7.png">
-              <img src="img/gallery-7.png" alt="gallery">
-              <span class="gallery__tile-name">Надежда Бабкина</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-8.png">
-              <img src="img/gallery-8.png" alt="gallery">
-              <span class="gallery__tile-name">Ренат Ибрагимов</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-9.png">
-              <img src="img/gallery-9.png" alt="gallery">
-              <span class="gallery__tile-name">Юлия Паршута</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-10.png">
-              <img src="img/gallery-10.png" alt="gallery">
-              <span class="gallery__tile-name">Сергей Бурунов</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-1.png">
-              <img src="img/gallery-1.png" alt="gallery">
-              <span class="gallery__tile-name">Валерий Меладзе</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-2.png">
-              <img src="img/gallery-2.png" alt="gallery">
-              <span class="gallery__tile-name">Пелагея</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-3.png">
-              <img src="img/gallery-3.png" alt="gallery">
-              <span class="gallery__tile-name">Григорий Лепс</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-4.png">
-              <img src="img/gallery-4.png" alt="gallery">
-              <span class="gallery__tile-name">Филипп Киркоров</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
-            <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-5.png">
-              <img src="img/gallery-5.png" alt="gallery">
-              <span class="gallery__tile-name">Михаил Шуфутинский</span>
-              <div class="gallery__tile-zoom">
-                <svg class='icon'>
-                  <use xlink:href='img/svg/sprite.svg#zoom'></use>
-                </svg>
-              </div>
-            </a>
+        <div class="gallery__container _container">
+          <div class="gallery__body">
+            <h2 class="gallery__title h2">
+              <img src="img/icons/title-decor.png" alt="title-decor">
+              Помогаем настоящим мастерам голоса
+            </h2>
+            <p class="gallery__subtitle">Под нашим наблюдением находятся звезды оперы, эстрады, театра и кино, известные
+              предприниматели,
+              телеведущие, ученые, педагоги и не публичные люди.</p>
+            <div class="gallery__content">
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-1.png">
+                <img src="img/gallery-1.png" alt="gallery">
+                <span class="gallery__tile-name">Валерий Меладзе</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-2.png">
+                <img src="img/gallery-2.png" alt="gallery">
+                <span class="gallery__tile-name">Пелагея</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-3.png">
+                <img src="img/gallery-3.png" alt="gallery">
+                <span class="gallery__tile-name">Григорий Лепс</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-4.png">
+                <img src="img/gallery-4.png" alt="gallery">
+                <span class="gallery__tile-name">Филипп Киркоров</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-5.png">
+                <img src="img/gallery-5.png" alt="gallery">
+                <span class="gallery__tile-name">Михаил Шуфутинский</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-6.png">
+                <img src="img/gallery-6.png" alt="gallery">
+                <span class="gallery__tile-name">Валерий Леонтьев</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-7.png">
+                <img src="img/gallery-7.png" alt="gallery">
+                <span class="gallery__tile-name">Надежда Бабкина</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-8.png">
+                <img src="img/gallery-8.png" alt="gallery">
+                <span class="gallery__tile-name">Ренат Ибрагимов</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-9.png">
+                <img src="img/gallery-9.png" alt="gallery">
+                <span class="gallery__tile-name">Юлия Паршута</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-10.png">
+                <img src="img/gallery-10.png" alt="gallery">
+                <span class="gallery__tile-name">Сергей Бурунов</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-1.png">
+                <img src="img/gallery-1.png" alt="gallery">
+                <span class="gallery__tile-name">Валерий Меладзе</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-2.png">
+                <img src="img/gallery-2.png" alt="gallery">
+                <span class="gallery__tile-name">Пелагея</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-3.png">
+                <img src="img/gallery-3.png" alt="gallery">
+                <span class="gallery__tile-name">Григорий Лепс</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-4.png">
+                <img src="img/gallery-4.png" alt="gallery">
+                <span class="gallery__tile-name">Филипп Киркоров</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="gallery__tile" data-fslightbox="gallery" href="img/gallery-5.png">
+                <img src="img/gallery-5.png" alt="gallery">
+                <span class="gallery__tile-name">Михаил Шуфутинский</span>
+                <div class="gallery__tile-zoom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#zoom'></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <button class="gallery__button">
+              <span class="more">Показать еще</span>
+              <span class="wrap">Свернуть</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6">
+                <path d="M9.5 1L5.5 5L1.5 1" />
+              </svg>
+            </button>
           </div>
-          <button class="gallery__button">
-            <span class="more">Показать еще</span>
-            <span class="wrap">Свернуть</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6">
-              <path d="M9.5 1L5.5 5L1.5 1" />
-            </svg>
-          </button>
         </div>
       </section>
 
@@ -1016,9 +1018,39 @@
 	</div>
 </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231009122222"></script>
-<script src="assets/libs/fslightbox.js?_v=20231009122222"></script>
-<script src="js/app.min.js?_v=20231009122222"></script>
+  <div class="modal modal-record">
+	<div class="modal__content">
+		<div class="modal__body">
+			<form class="record__form form-record" data-form="record">
+				<div class="record__form_info">
+					<img src="img/icons/tabler.png" alt="tabler">
+					<span>через форму онлайн-записи</span>
+				</div>
+				<div class="record__form_row">
+					<div class="record__form_wpInput wpInput">
+						<input type="text" name="name" class="record__form_input input" placeholder="Имя">
+					</div>
+					<div class="record__form_wpInput wpInput">
+						<input type="tel" name="phone" class="record__form_input input" inputmode="tel" placeholder="Телефон">
+					</div>
+				</div>
+				<button type="submit" class="record__form_button button hover">Записаться</button>
+				<label class="record__form_bottom wpCheckbox-label">
+					<input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+					<label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+					<p class="record__form_text">согласен на обработку персональных данных</p>
+				</label>
+			</form>
+			<div class="modal__close">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231011212714"></script>
+<script src="assets/libs/fslightbox.js?_v=20231011212714"></script>
+<script src="js/app.min.js?_v=20231011212714"></script>
 </body>
 
 </html>

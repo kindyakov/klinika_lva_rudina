@@ -6,9 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231214183121" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231214183121" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231214183121">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231214195604" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231214195604" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231214195604">
 </head>
 
 <body>
@@ -767,7 +767,8 @@
 										<svg class='icon'>
 											<use xlink:href='img/svg/sprite.svg#file'></use>
 										</svg>
-										<a href="assets/files/Товарный знак фониология.pdf" target="_blank">Свидетельство на товарный знак
+										<a href="assets/files/Свидетельство на товарный знак.pdf" target="_blank">Свидетельство на товарный
+											знак
 											№814823</a>
 									</li>
 								</ul>
@@ -780,6 +781,9 @@
 									</div>
 									<div class="certificates__swiper-slide swiper-slide">
 										<img src="img/Товарный знак фониология_page-0001.webp" alt="specialists">
+									</div>
+									<div class="certificates__swiper-slide swiper-slide">
+										<img src="img/Свидетельство на товарный знак_page-0001.webp" alt="specialists">
 									</div>
 								</div>
 								<div class="certificates__swiper-pagination"></div>
@@ -907,7 +911,7 @@
 							<!-- <img src="img/map.webp" alt="map"> -->
 							<div id="map" class="yandex-mapper">
 								<script type="text/javascript" charset="utf-8" async
-									src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8cde998a4ff33b60fbc91853509499b95c0408c4ca67b87ef399293d64700e59&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true&_v=20231214183121"></script>
+									src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8cde998a4ff33b60fbc91853509499b95c0408c4ca67b87ef399293d64700e59&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true&_v=20231214195604"></script>
 							</div>
 						</div>
 					</div>
@@ -915,44 +919,44 @@
 			</section>
 
 			<section class="record section">
-				<div class="record__container _container">
-					<div class="record__body">
-						<div class="record__content">
-							<div class="record__block">
-								<h4 class="record__title">Записаться на прием</h4>
-								<span>Вы можете записаться по телефону</span>
-								<div class="record__block-bottom">
-									<svg class='icon'>
-										<use xlink:href='img/svg/sprite.svg#tel'></use>
-									</svg>
-									<a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
-								</div>
-							</div>
-							<form class="record__form form-record" data-form="record">
-								<div class="record__form_info">
-									<img src="img/icons/tabler.webp" alt="tabler">
-									<span>через форму онлайн-записи</span>
-								</div>
-								<div class="record__form_row">
-									<div class="record__form_wpInput wpInput">
-										<input type="text" name="name" class="record__form_input input" placeholder="Имя">
-									</div>
-									<div class="record__form_wpInput wpInput">
-										<input type="tel" name="phone" class="record__form_input input" inputmode="tel"
-											placeholder="Телефон">
-									</div>
-								</div>
-								<button type="submit" class="record__form_button button hover">Записаться</button>
-								<label class="record__form_bottom wpCheckbox-label">
-									<input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
-									<label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
-									<p class="record__form_text">согласен на обработку персональных данных</p>
-								</label>
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
+  <div class="record__container _container">
+    <div class="record__body">
+      <div class="record__content">
+        <div class="record__block">
+          <h4 class="record__title">Записаться на прием</h4>
+          <span>Вы можете записаться по телефону</span>
+          <div class="record__block-bottom">
+            <svg class='icon'>
+              <use xlink:href='img/svg/sprite.svg#tel'></use>
+            </svg>
+            <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+          </div>
+        </div>
+        <form class="record__form form-record" data-form="record">
+          <div class="record__form_unavailable"><span>записаться можно только по телефону</span></div>
+          <div class="record__form_info _none">
+            <img src="img/icons/tabler.webp" alt="tabler">
+            <span>через форму онлайн-записи</span>
+          </div>
+          <div class="record__form_row _none">
+            <div class="record__form_wpInput wpInput">
+              <input type="text" name="name" class="record__form_input input" placeholder="Имя">
+            </div>
+            <div class="record__form_wpInput wpInput">
+              <input type="tel" name="phone" class="record__form_input input" inputmode="tel" placeholder="Телефон">
+            </div>
+          </div>
+          <button type="submit" class="record__form_button button hover _none">Записаться</button>
+          <label class="record__form_bottom wpCheckbox-label _none">
+            <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+            <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+            <p class="record__form_text">согласен на обработку персональных данных</p>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 		</main>
 		<footer class="footer">
 	<div class="footer__container _container">
@@ -1136,10 +1140,10 @@
 		</div>
 	</div>
 </div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231214183121"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231214183121"></script>
-<script src="assets/libs/fslightbox.js?_v=20231214183121"></script>
-<script src="js/app.min.js?_v=20231214183121"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231214195604"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231214195604"></script>
+<script src="assets/libs/fslightbox.js?_v=20231214195604"></script>
+<script src="js/app.min.js?_v=20231214195604"></script>
 </body>
 
 </html>

@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<title>Цены</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231214183121" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231214183121" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231214183121">
+</head>
+
+<body>
+  <div class='wrapper'>
+    <header class="header">
+	<div class="header__body">
+		<div class="header__container _container">
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item"><a href="about.html" class="header__link link-page">О клинике</a></li>
+					<li class="header__item"><a href="services.html" class="header__link link-page">Услуги</a></li>
+					<li class="header__item"><a href="prices.html" class="header__link link-page">Цены</a></li>
+					<li class="header__item"><a href="articles.html" class="header__link link-page">Статьи</a></li>
+					<li class="header__item"><a href="analyzes.html" class="header__link link-page">Анализы</a></li>
+					<li class="header__item"><a href="media.html" class="header__link link-page">Медиа</a></li>
+					<li class="header__item"><a href="stocks.html" class="header__link link-page">Акции</a></li>
+					<li class="header__item"><a href="patients.html" class="header__link link-page">Пациентам</a></li>
+					<li class="header__item"><a href="contacts.html" class="header__link link-page">Контакты</a></li>
+					<div class="header__list_close"></div>
+				</ul>
+				<div class="header-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+
+			<div class="header__content">
+				<a href="index.html" class="header__logo" data-aos="fade-down">
+					<img src="img/logo.png" alt="logo">
+					<span class="header__logo-text">Клиника<br> Льва Рудина</span>
+				</a>
+				<div class="header__content-controls">
+					<button class="header__visuallyImpaired header-controls-btn" data-aos="zoom-in" data-aos-delay="100">
+						<svg class='icon'>
+							<use xlink:href='img/svg/sprite.svg#glasses'></use>
+						</svg>
+					</button>
+					<form class="header__form">
+						<input type="search" name="search" class="header__form_search" placeholder="поиск">
+						<span class="header__form_btn header-controls-btn">
+							<svg class='icon'>
+								<use xlink:href='img/svg/sprite.svg#search'></use>
+							</svg>
+						</span>
+					</form>
+				</div>
+
+				<a href="tel:74957269760" class="header__tel" data-aos="fade-down" data-aos-delay="200">+7 (495) 726-97-60</a>
+
+				<div class="header__messengers" data-da=".header__nav,767.98,first">
+					<button class="header__messengers_link modal-btn-active" data-aos="zoom-in" data-aos-delay="300">
+						<svg class='icon'>
+							<use xlink:href='img/svg/sprite.svg#tel'></use>
+						</svg>
+					</button>
+					<a href="https://wa.me/74957269760" class="header__messengers_link" data-aos="zoom-in" data-aos-delay="350"
+						target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="icon">
+							<path
+								d="M9.00001 0C13.9707 0 18 4.0293 18 8.99999C18 13.9707 13.9707 18 9.00001 18C7.40951 18.0026 5.847 17.5816 4.47301 16.7805L0.00361266 18L1.22041 13.5288C0.418596 12.1544 -0.00264454 10.5912 1.24922e-05 8.99999C1.24922e-05 4.0293 4.02931 0 9.00001 0ZM5.93281 4.77L5.75281 4.7772C5.63628 4.78429 5.52239 4.81491 5.41801 4.8672C5.32038 4.92248 5.23126 4.9916 5.15341 5.0724C5.04541 5.1741 4.98421 5.2623 4.91851 5.3478C4.58562 5.78061 4.40638 6.31198 4.40911 6.858C4.41091 7.299 4.52611 7.72829 4.70611 8.12969C5.07421 8.94149 5.67991 9.80099 6.47911 10.5975C6.67171 10.7892 6.86071 10.9818 7.06411 11.1609C8.05716 12.0352 9.24053 12.6657 10.5201 13.0023L11.0313 13.0806C11.1978 13.0896 11.3643 13.077 11.5317 13.0689C11.7938 13.0554 12.0498 12.9844 12.2814 12.861C12.3993 12.8003 12.5143 12.7342 12.6261 12.663C12.6261 12.663 12.6648 12.6378 12.7386 12.582C12.8601 12.492 12.9348 12.4281 13.0356 12.3228C13.1103 12.2454 13.1751 12.1545 13.2246 12.051C13.2948 11.9043 13.365 11.6244 13.3938 11.3913C13.4154 11.2131 13.4091 11.1159 13.4064 11.0556C13.4028 10.9593 13.3227 10.8594 13.2354 10.8171L12.7116 10.5822C12.7116 10.5822 11.9286 10.2411 11.4498 10.0233C11.3997 10.0014 11.346 9.98891 11.2914 9.98639C11.2298 9.98007 11.1676 9.987 11.1089 10.0067C11.0503 10.0264 10.9965 10.0585 10.9512 10.1007C10.9467 10.0989 10.8864 10.1502 10.2357 10.9386C10.1984 10.9888 10.1469 11.0267 10.0879 11.0475C10.0289 11.0684 9.96509 11.0712 9.90451 11.0556C9.84588 11.0399 9.78843 11.02 9.7326 10.9962C9.62101 10.9494 9.58231 10.9314 9.50581 10.899C8.98927 10.6736 8.51103 10.369 8.08831 9.99629C7.97491 9.89729 7.86961 9.78929 7.76161 9.68489C7.40754 9.3458 7.09896 8.9622 6.84361 8.54369L6.79051 8.45819C6.75237 8.40074 6.72153 8.33877 6.69871 8.27369C6.66451 8.14139 6.75361 8.03519 6.75361 8.03519C6.75361 8.03519 6.97231 7.79579 7.07401 7.66619C7.17301 7.54019 7.25671 7.4178 7.31071 7.3305C7.41691 7.1595 7.45021 6.984 7.39441 6.8481C7.14241 6.2325 6.88141 5.6196 6.61321 5.0112C6.56011 4.8906 6.40261 4.8042 6.25951 4.7871C6.21091 4.7817 6.16231 4.7763 6.11371 4.7727C5.99284 4.76669 5.87173 4.76789 5.75101 4.7763L5.93191 4.7691L5.93281 4.77Z" />
+						</svg>
+					</a>
+					<a href="" class="header__messengers_link" data-aos="zoom-in" data-aos-delay="400" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="icon">
+							<path
+								d="M9 0C4.032 0 0 4.032 0 9C0 13.968 4.032 18 9 18C13.968 18 18 13.968 18 9C18 4.032 13.968 0 9 0ZM13.176 6.12C13.041 7.542 12.456 10.998 12.159 12.591C12.033 13.266 11.781 13.491 11.547 13.518C11.025 13.563 10.629 13.176 10.125 12.843C9.333 12.321 8.883 11.997 8.118 11.493C7.227 10.908 7.803 10.584 8.316 10.062C8.451 9.927 10.755 7.83 10.8 7.641C10.8063 7.61237 10.8054 7.58265 10.7976 7.55442C10.7897 7.52619 10.7751 7.5003 10.755 7.479C10.701 7.434 10.629 7.452 10.566 7.461C10.485 7.479 9.225 8.316 6.768 9.972C6.408 10.215 6.084 10.341 5.796 10.332C5.472 10.323 4.86 10.152 4.401 9.999C3.834 9.819 3.393 9.72 3.429 9.405C3.447 9.243 3.672 9.081 4.095 8.91C6.723 7.767 8.469 7.011 9.342 6.651C11.844 5.607 12.357 5.427 12.699 5.427C12.771 5.427 12.942 5.445 13.05 5.535C13.14 5.607 13.167 5.706 13.176 5.778C13.167 5.832 13.185 5.994 13.176 6.12Z" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+    <main class='main'>
+      <section class="phoniatry section-bg">
+        <div class="phoniatry__container _container">
+          <div class="phoniatry__body">
+            <ul class="path">
+              <li class="path__li">
+                <a href="index.html" class="path__link">Главная</a>
+              </li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                <path d="M1 1L5 5L1 9" stroke="#8F98A5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <li class="path__li">
+                <a href="#" class="path__link">Врачи</a>
+              </li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                <path d="M1 1L5 5L1 9" stroke="#8F98A5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <li class="path__li">
+                <a href="lev-borisovich-rudin.html" class="path__link">Лев Борисович Рудин</a>
+              </li>
+            </ul>
+            <div class="phoniatry__content">
+              <div class="phoniatry__top">
+                <h1 class="phoniatry__title h1">Цены</h1>
+                <a href="#" class="phoniatry__all-price button">Полный прайс-лист</a>
+              </div>
+              <div class="phoniatry__block">
+                <h2 class="phoniatry__title-h2 h2">Фониатрия</h2>
+                <div class="phoniatry__wrap-cards">
+                  <div class="phoniatry__card">
+                    <div class="phoniatry__card_top">
+                      <h4 class="phoniatry__card_title">Лев Борисович Рудин</h4>
+                      <span class="phoniatry__card_info-span">Первичный приём <br>(осмотр, консультация)</span>
+                    </div>
+                    <div class="phoniatry__card_bottom">
+                      <span class="phoniatry__card_price">от 10 500 ₽</span>
+                      <a href="#" class="phoniatry__card_link button hover">Подробнее</a>
+                    </div>
+                    <img src="img/phoniatry-1.png" alt="Картинка" class="phoniatry__card_img">
+                  </div>
+                  <div class="phoniatry__card">
+                    <div class="phoniatry__card_top">
+                      <h4 class="phoniatry__card_title">Казарина Ольга Витальевна</h4>
+                      <span class="phoniatry__card_info-span">Первичный приём <br>(осмотр, консультация)</span>
+                    </div>
+                    <div class="phoniatry__card_bottom">
+                      <span class="phoniatry__card_price">от 8 000 ₽</span>
+                      <a href="#" class="phoniatry__card_link button hover">Подробнее</a>
+                    </div>
+                    <img src="img/phoniatry-2.png" alt="Картинка" class="phoniatry__card_img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization otorhinolaryngology section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Оториноларингология</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.028.001</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л.
+                    Б. первичный (не включает специальных методов
+                    исследования и клинико-диагностических процедур)</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 4 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.028.001.001</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л.
+                    Б. первичный (не включает специальных методов
+                    исследования и клинико-диагностических процедур) фониатрический</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 5 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.028.001.002</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-оториноларинголога Казариной
+                    О. В. первичный (не включает специальных методов
+                    исследования и клинико-диагностических процедур)</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 3 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.028.001.003</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-оториноларинголога Казариной
+                    О. В. первичный (не включает специальных методов
+                    исследования и клинико-диагностических процедур) фониатрический</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 4 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.028.002</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-оториноларинголога повторный
+                  </p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 2 200 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B04.028.002</span>
+                  <p class="specialization__card_text">Профилактический приём (осмотр, консультация) врача-
+                    оториноларинголога</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 2 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization therapy section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Терапия</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.047.001</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 2 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.047.002</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-терапевта повторный</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 2 000 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B04.047.001</span>
+                  <p class="specialization__card_text">Диспансерный приём (осмотр, консультация) врача-терапевта</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B04.047.002</span>
+                  <p class="specialization__card_text">Профилактический приём (осмотр, консультация) врача-терапевта</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 000 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A01.30.026</span>
+                  <p class="specialization__card_text">Опрос (анкетирование) на выявление неинфекционных заболеваний и
+                    факторов риска их развития</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A25.09.001</span>
+                  <p class="specialization__card_text">Назначение лекарственных препаратов при заболеваниях нижних
+                    дыхательных путей и лёгочной ткани</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 700 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization ultrasound section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Узи</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A04.01.001</span>
+                  <p class="specialization__card_text">Ультразвуковое исследование мягких тканей (одна анатомическая
+                    зона)</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 700 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A04.04.001</span>
+                  <p class="specialization__card_text">Ультразвуковое исследование сустава</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 2 200 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A04.04.002</span>
+                  <p class="specialization__card_text">Ультразвуковое исследование сухожилий</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 800 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization endocrinology section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Эндокринология</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.058.001</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-эндокринолога первичный</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 3 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.058.002</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-эндокринолога повторный</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 3 000 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A25.22.001</span>
+                  <p class="specialization__card_text">Назначение лекарственных препаратов при заболеваниях желёз
+                    внутренней секреции</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization neurology section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Неврология</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.023.001</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-невролога первичный</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 7 000 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.023.002</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-невролога повторный</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 5 000 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B04.023.001</span>
+                  <p class="specialization__card_text">Диспансерный приём (осмотр, консультация) врача-невролога</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 4 000 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization treatment-room section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Процедурный кабинет</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.023.001</span>
+                  <p class="specialization__card_text">Капельница</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 2 500 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.023.002</span>
+                  <p class="specialization__card_text">Внутримышечная инъекция</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 400 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B04.023.001</span>
+                  <p class="specialization__card_text">Внутривенная инъекция</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 000 ₽</span>
+                  <button class="specialization__card_button button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricelist section">
+        <div class="pricelist__container _container">
+          <div class="pricelist__body">
+            <div class="pricelist__top">
+              <h2 class="pricelist__title h1">Прайс-лист</h2>
+              <form class="form-pricelist-filter">
+                <div class="pricelist__wp-input">
+                  <input type="text" name="filter" class="pricelist__input" placeholder="Поиск">
+                  <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M7.5 13.5C11.0899 13.5 14 10.8137 14 7.5C14 4.18629 11.0899 1.5 7.5 1.5C3.91015 1.5 1 4.18629 1 7.5C1 10.8137 3.91015 13.5 7.5 13.5Z"
+                        stroke="#24272B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M12 12.5L15 14.5" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="pricelist__content">
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Общеклинические услуги</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Оториноларингология</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Терапия</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта повторный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Диспансерный приём (осмотр, консультация) врача-терапевта</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Профилактический приём (осмотр, консультация) врача-терапевта</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Опрос (анкетирование) на выявление неинфекционных заболеваний и факторов риска их
+                      развития</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях нижних дыхательных путей и
+                      лёгочной ткани</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Назначение диетического питания при заболеваниях нижних дыхательных путей и лёгочной
+                      ткани</p>
+                    <span class="price">700 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях сердца и перикарда</p>
+                    <span class="price">700 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях сердца и перикарда</p>
+                    <span class="price">700 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Эндокринология</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Неврология</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Процедурный кабинет</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Ультразвуковая диагностика</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Психология</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.047.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__content-not-found" data-height="250">
+                <span>ничего не найдено</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map section">
+        <div class="map__container">
+          <div class="map__body">
+            <div class="map__content">
+              <div class="map__wpText">
+                <img src="img/icons/decor-3.png" alt="decor" class="decor">
+                <address class="map__address">Москва,<br> Басманный переулок<br> дом 9</address>
+                <div class="map__address-info">
+                  <img src="img/icons/metro.png" alt="metro">
+                  <span>300 метров от станции метро “Комсомольская”</span>
+                </div>
+                <ul class="map__schedule">
+                  <li>Вт-Сб: 10:00 – 22:00</li>
+                  <li>Воскресенье, понедельник - выходной</li>
+                </ul>
+                <a href="https://yandex.ru/maps/?rtext=~55.77141719006554,37.66014611838522"
+                  class="map__button button hover" target="_blank">Построить маршрут</a>
+              </div>
+            </div>
+
+            <div class="map__yandex">
+              <!-- <img src="img/map.png" alt="map"> -->
+              <div id="map" class="yandex-mapper">
+                <script type="text/javascript" charset="utf-8" async
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8cde998a4ff33b60fbc91853509499b95c0408c4ca67b87ef399293d64700e59&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true&_v=20231214183121"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="record section">
+        <div class="record__container _container">
+          <div class="record__body">
+            <div class="record__content">
+              <div class="record__block">
+                <h4 class="record__title">Записаться на прием</h4>
+                <span>Вы можете записаться по телефону</span>
+                <div class="record__block-bottom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#tel'></use>
+                  </svg>
+                  <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+                </div>
+              </div>
+              <form class="record__form form-record" data-form="record">
+                <div class="record__form_info">
+                  <img src="img/icons/tabler.png" alt="tabler">
+                  <span>через форму онлайн-записи</span>
+                </div>
+                <div class="record__form_row">
+                  <div class="record__form_wpInput wpInput">
+                    <input type="text" name="name" class="record__form_input input" placeholder="Имя">
+                  </div>
+                  <div class="record__form_wpInput wpInput">
+                    <input type="tel" name="phone" class="record__form_input input" inputmode="tel"
+                      placeholder="Телефон">
+                  </div>
+                </div>
+                <button type="submit" class="record__form_button button hover">Записаться</button>
+                <label class="record__form_bottom wpCheckbox-label">
+                  <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+                  <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+                  <p class="record__form_text">согласен на обработку персональных данных</p>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__body">
+			<div class="footer__top">
+				<a href="index.html" class="footer__logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<nav class="footer__nav">
+					<ul class="footer__list">
+						<li class="footer__li">
+							<span>Информация</span>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">О клинике</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Цены</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Анализы</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Медиа</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Акции</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Пациентам</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Контакты</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Лицензии</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__li">
+							<span>Услуги</span>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Фониатрия</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Отоларингология</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Неврология</a>
+						</li>
+						<li class="footer__li">
+							<a href="#" class="footer__link">Анализы</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="footer__info-block">
+					<a href="tel:74957269760" class="footer__tel">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 15" class="icon">
+							<path
+								d="M4.09729 1.5H2.26316C1.56554 1.5 1 2.06554 1 2.76316C1 8.69295 5.80705 13.5 11.7368 13.5C12.4345 13.5 13 12.9345 13 12.2368V10.4027C13 9.8575 12.6681 9.36723 12.1619 9.16474L10.4047 8.4619C9.95003 8.28001 9.43221 8.36205 9.05598 8.67557L8.60207 9.05383C8.0723 9.49531 7.2933 9.45997 6.80568 8.97235L5.52765 7.69432C5.04003 7.2067 5.00469 6.4277 5.44617 5.89793L5.82443 5.44402C6.13795 5.06779 6.21999 4.54997 6.0381 4.09525L5.33526 2.33815C5.13277 1.83193 4.6425 1.5 4.09729 1.5Z"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<span>+7 (495) 726-97-60</span></a>
+					<a href="mailto:info@levrudin.ru" class="footer__mail">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" class="icon">
+							<path
+								d="M14.2222 1.5H1.77778C1.34822 1.5 1 1.8198 1 2.21429V10.7857C1 11.1802 1.34822 11.5 1.77778 11.5H14.2222C14.6518 11.5 15 11.1802 15 10.7857V2.21429C15 1.8198 14.6518 1.5 14.2222 1.5Z"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M1 2L8 6L15 2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<span>info@levrudin.ru</span>
+					</a>
+					<address class="footer__address">Москва, Басманный переулок дом 9</address>
+					<span class="footer__schedule">Вт-Сб: 10:00 - 22:00<br>Воскресенье, понедельник - выходной</span>
+					<span class="footer__license-span">Лицензия на осуществление медицинской деятельности ЛО-77-01-021375</span>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="footer__wpButton">
+					<button class="footer__button button btn-visually-impaired">
+						<svg class='icon'>
+							<use xlink:href='img/svg/sprite.svg#glasses'></use>
+						</svg>
+						<span>Версия для слабовидящих</span>
+					</button>
+					<button class="footer__button modal-btn-active button hover">Записаться на прием</button>
+				</div>
+
+				<ul class="footer__messengers">
+					<li class="footer__messengers_li">
+						<a href="https://vk.com/klinikarudina" class="footer__messengers_link" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" class="icon">
+								<path
+									d="M9.80387 11.5C3.65397 11.5 0.146159 7.37087 0 0.5H3.08057C3.18176 5.54304 5.45284 7.67918 7.25172 8.11962V0.5H10.1524V4.84935C11.9288 4.66216 13.7951 2.68018 14.4247 0.5H17.3254C17.0882 1.6307 16.6152 2.7013 15.9362 3.64482C15.2572 4.58835 14.3867 5.3845 13.3791 5.98348C14.5038 6.53079 15.4972 7.30546 16.2937 8.25637C17.0902 9.20728 17.6718 10.3128 18 11.5H14.807C14.5124 10.4688 13.9135 9.54578 13.0855 8.84651C12.2575 8.14723 11.2372 7.70286 10.1524 7.56907V11.5H9.80387Z" />
+							</svg>
+						</a>
+					</li>
+					<li class="footer__messengers_li">
+						<a href="https://www.youtube.com/channel/UC9zuH4VhPOiOHFZSpaeE1Fw" class="footer__messengers_link"
+							target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" class="icon"
+								target="_blank">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M17.8252 0.428213C18.6819 0.658872 19.3574 1.33407 19.5879 2.19065C20.0164 3.75522 19.9999 7.01648 19.9999 7.01648C19.9999 7.01648 19.9999 10.2611 19.5881 11.8258C19.3574 12.6823 18.682 13.3576 17.8252 13.5881C16.2602 14 9.99996 14 9.99996 14C9.99996 14 3.75609 14 2.17467 13.5718C1.3179 13.3411 0.642545 12.6658 0.411833 11.8094C0 10.2611 0 7 0 7C0 7 0 3.75522 0.411833 2.19065C0.642392 1.33422 1.33438 0.642396 2.17452 0.41189C3.73961 0 9.99981 0 9.99981 0C9.99981 0 16.2602 0 17.8252 0.428213ZM13 7L8 10V4L13 7Z" />
+							</svg>
+						</a>
+					</li>
+					<li class="footer__messengers_li">
+						<a href="https://wa.me/74957269760" class="footer__messengers_link" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="icon">
+								<path
+									d="M9.00001 0C13.9707 0 18 4.0293 18 8.99999C18 13.9707 13.9707 18 9.00001 18C7.40951 18.0026 5.847 17.5816 4.47301 16.7805L0.00361266 18L1.22041 13.5288C0.418596 12.1544 -0.00264454 10.5912 1.24922e-05 8.99999C1.24922e-05 4.0293 4.02931 0 9.00001 0ZM5.93281 4.77L5.75281 4.7772C5.63628 4.78429 5.52239 4.81491 5.41801 4.8672C5.32038 4.92248 5.23126 4.9916 5.15341 5.0724C5.04541 5.1741 4.98421 5.2623 4.91851 5.3478C4.58562 5.78061 4.40638 6.31198 4.40911 6.858C4.41091 7.299 4.52611 7.72829 4.70611 8.12969C5.07421 8.94149 5.67991 9.80099 6.47911 10.5975C6.67171 10.7892 6.86071 10.9818 7.06411 11.1609C8.05716 12.0352 9.24053 12.6657 10.5201 13.0023L11.0313 13.0806C11.1978 13.0896 11.3643 13.077 11.5317 13.0689C11.7938 13.0554 12.0498 12.9844 12.2814 12.861C12.3993 12.8003 12.5143 12.7342 12.6261 12.663C12.6261 12.663 12.6648 12.6378 12.7386 12.582C12.8601 12.492 12.9348 12.4281 13.0356 12.3228C13.1103 12.2454 13.1751 12.1545 13.2246 12.051C13.2948 11.9043 13.365 11.6244 13.3938 11.3913C13.4154 11.2131 13.4091 11.1159 13.4064 11.0556C13.4028 10.9593 13.3227 10.8594 13.2354 10.8171L12.7116 10.5822C12.7116 10.5822 11.9286 10.2411 11.4498 10.0233C11.3997 10.0014 11.346 9.98891 11.2914 9.98639C11.2298 9.98007 11.1676 9.987 11.1089 10.0067C11.0503 10.0264 10.9965 10.0585 10.9512 10.1007C10.9467 10.0989 10.8864 10.1502 10.2357 10.9386C10.1984 10.9888 10.1469 11.0267 10.0879 11.0475C10.0289 11.0684 9.96509 11.0712 9.90451 11.0556C9.84588 11.0399 9.78843 11.02 9.7326 10.9962C9.62101 10.9494 9.58231 10.9314 9.50581 10.899C8.98927 10.6736 8.51103 10.369 8.08831 9.99629C7.97491 9.89729 7.86961 9.78929 7.76161 9.68489C7.40754 9.3458 7.09896 8.9622 6.84361 8.54369L6.79051 8.45819C6.75237 8.40074 6.72153 8.33877 6.69871 8.27369C6.66451 8.14139 6.75361 8.03519 6.75361 8.03519C6.75361 8.03519 6.97231 7.79579 7.07401 7.66619C7.17301 7.54019 7.25671 7.4178 7.31071 7.3305C7.41691 7.1595 7.45021 6.984 7.39441 6.8481C7.14241 6.2325 6.88141 5.6196 6.61321 5.0112C6.56011 4.8906 6.40261 4.8042 6.25951 4.7871C6.21091 4.7817 6.16231 4.7763 6.11371 4.7727C5.99284 4.76669 5.87173 4.76789 5.75101 4.7763L5.93191 4.7691L5.93281 4.77Z">
+								</path>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__messengers_li">
+						<a href="" class="footer__messengers_link" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="icon">
+								<path
+									d="M9 0C4.032 0 0 4.032 0 9C0 13.968 4.032 18 9 18C13.968 18 18 13.968 18 9C18 4.032 13.968 0 9 0ZM13.176 6.12C13.041 7.542 12.456 10.998 12.159 12.591C12.033 13.266 11.781 13.491 11.547 13.518C11.025 13.563 10.629 13.176 10.125 12.843C9.333 12.321 8.883 11.997 8.118 11.493C7.227 10.908 7.803 10.584 8.316 10.062C8.451 9.927 10.755 7.83 10.8 7.641C10.8063 7.61237 10.8054 7.58265 10.7976 7.55442C10.7897 7.52619 10.7751 7.5003 10.755 7.479C10.701 7.434 10.629 7.452 10.566 7.461C10.485 7.479 9.225 8.316 6.768 9.972C6.408 10.215 6.084 10.341 5.796 10.332C5.472 10.323 4.86 10.152 4.401 9.999C3.834 9.819 3.393 9.72 3.429 9.405C3.447 9.243 3.672 9.081 4.095 8.91C6.723 7.767 8.469 7.011 9.342 6.651C11.844 5.607 12.357 5.427 12.699 5.427C12.771 5.427 12.942 5.445 13.05 5.535C13.14 5.607 13.167 5.706 13.176 5.778C13.167 5.832 13.185 5.994 13.176 6.12Z">
+								</path>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__under">
+				<span>2022 © Клиника Льва Рудина</span>
+				<a href="">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</div>
+</footer>
+  </div>
+  <div class="modal modal-record">
+	<div class="modal__content">
+		<div class="modal__body">
+			<form class="record__form form-record" data-form="record">
+				<div class="record__form_info">
+					<img src="img/icons/tabler.png" alt="tabler">
+					<span>через форму онлайн-записи</span>
+				</div>
+				<div class="record__form_row">
+					<div class="record__form_wpInput wpInput">
+						<input type="text" name="name" class="record__form_input input" placeholder="Имя">
+					</div>
+					<div class="record__form_wpInput wpInput">
+						<input type="tel" name="phone" class="record__form_input input" inputmode="tel" placeholder="Телефон">
+					</div>
+				</div>
+				<button type="submit" class="record__form_button button hover">Записаться</button>
+				<label class="record__form_bottom wpCheckbox-label">
+					<input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+					<label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+					<p class="record__form_text">согласен на обработку персональных данных</p>
+				</label>
+			</form>
+			<div class="modal__close">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal-video">
+	<div class="modal__content">
+		<div class="modal__body">
+			<video class="video" preload="metadata" controls>
+				<source src="" type="video/mp4">
+			</video>
+		</div>
+		<div class="modal__close">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231214183121"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231214183121"></script>
+<script src="assets/libs/fslightbox.js?_v=20231214183121"></script>
+<script src="js/app.min.js?_v=20231214183121"></script>
+</body>
+
+</html>

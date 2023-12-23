@@ -6,9 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231214195604" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231214195604" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231214195604">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231223204038" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231223204038" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231223204038">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 				<ul class="header__list">
 					<li class="header__item"><a href="about.html" class="header__link link-page">О клинике</a></li>
 					<li class="header__item"><a href="services.html" class="header__link link-page">Услуги</a></li>
-					<li class="header__item"><a href="prices.html" class="header__link link-page">Цены</a></li>
+					<li class="header__item"><a href="price.html" class="header__link link-page">Цены</a></li>
 					<li class="header__item"><a href="articles.html" class="header__link link-page">Статьи</a></li>
 					<li class="header__item"><a href="analyzes.html" class="header__link link-page">Анализы</a></li>
 					<li class="header__item"><a href="media.html" class="header__link link-page">Медиа</a></li>
@@ -112,7 +112,7 @@
               <ul class="doctor__list">
                 <li class="doctor__li" data-aos="fade-right">
                   <img src="img/icons/icon-white-2.png" alt="intro-list">
-                  <p>Лев Рудин — основоположник фониология, науки о голосе</p>
+                  <p>Лев Рудин — основоположник фонилоогии, науки о голосе</p>
                 </li>
                 <li class="doctor__li" data-aos="fade-right" data-aos-delay="50">
                   <img src="img/icons/icon-white-3.png" alt="intro-list">
@@ -337,7 +337,7 @@
                 <div class="recovering__item_content">
                   <h4 class="recovering__item_title">Ведущие врачи России</h4>
                   <p class="recovering__item_text">Специалисты клиники - единственные на сегодняшний день носители и
-                    продолжатели лучших традиций отечественной фониатрической школы.</p>
+                    продолжатели лучших традиций отечественной фониатрической школы</p>
                 </div>
               </div>
             </div>
@@ -360,11 +360,12 @@
                 </div>
               </div>
               <form class="record__form form-record" data-form="record">
-                <div class="record__form_info">
+                <div class="record__form_unavailable"><span>записаться можно только по телефону</span></div>
+                <div class="record__form_info _none">
                   <img src="img/icons/tabler.png" alt="tabler">
                   <span>через форму онлайн-записи</span>
                 </div>
-                <div class="record__form_row">
+                <div class="record__form_row _none">
                   <div class="record__form_wpInput wpInput">
                     <input type="text" name="name" class="record__form_input input" placeholder="Имя">
                   </div>
@@ -373,8 +374,8 @@
                       placeholder="Телефон">
                   </div>
                 </div>
-                <button type="submit" class="record__form_button button hover">Записаться</button>
-                <label class="record__form_bottom wpCheckbox-label">
+                <button type="submit" class="record__form_button button hover _none">Записаться</button>
+                <label class="record__form_bottom wpCheckbox-label _none">
                   <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
                   <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
                   <p class="record__form_text">согласен на обработку персональных данных</p>
@@ -600,13 +601,13 @@
                         </li>
                         <li class="specialists__specialist_item-right">
                           <img src="img/icons/check.png" alt="check">
-                          <p>Основоположник фониология - науки о голосе</p>
+                          <p>Основоположник фонилоогии - науки о голосе</p>
                         </li>
                         <li class="specialists__specialist_item-right">
                           <img src="img/icons/check.png" alt="check">
                           <p>Автор книг</p>
                           <ul class="specialists__specialist_subList">
-                            <li>Основы голос'оведения </li>
+                            <li>Основы голосóведения </li>
                             <li>Руководство по голососбережению</li>
                             <li>Гигиена голоса</li>
                           </ul>
@@ -720,17 +721,24 @@
                 <div class="prices__card_content">
                   <h4 class="prices__card_title">Первичный прием</h4>
                   <div class="prices__card_wpText">
-                    <p class="prices__card_text">Осмотр на основе жалоб. Обычно проходит без использования специального
-                      оборудования.</p>
-                    <p class="prices__card_text">При необходимости проводится дополнительная аппаратная диагностика.
-                      Могут
-                      быть назначены анализы. Все процедуры проходят в клинике в день приема.</p>
+                    <p class="prices__card_text">Состоит из тщательного сбора анамнеза, осмотра ЛОР-органов
+                      традиционными способами, по показанием используются
+                      эндоскопия, риноманометрия и другие дополнительные методы. </p>
+                    <p class="prices__card_text">Гортань в нашей клинике ВСЕГДА осматривается с помощью
+                      стробоскопа, что является золотым стандартом диагностики в фониатрии. По показаниям применяются
+                      диагностические процедуры, акустические исследования и глоттография. Осмотр безболезненн!</p>
+                    <p class="prices__card_text">Далее ставится диагноз и назначается
+                      лечебная схема. По показаниям проводится лабораторная диагностика и рекомендуются консультации
+                      смежных специалистов.</p>
+                    <p class="prices__card_text">Далее ставится диагноз и назначается лечебная схема. По показаниям
+                      проводится лабораторная диагностика и рекомендуются консультации смежных специалистов.
+                    </p>
                   </div>
                   <div class="prices__card_bottom">
                     <span class="prices__card_name">Рудин Лев Борисович</span>
-                    <span class="prices__card_price"><b>9 000</b>₽</span>
+                    <span class="prices__card_price"><b>10 500</b>₽</span>
                     <span class="prices__card_name">Казарина Ольга Витальевна</span>
-                    <span class="prices__card_price"><b>7 000</b>₽</span>
+                    <span class="prices__card_price"><b>8 000</b>₽</span>
                   </div>
                 </div>
               </div>
@@ -741,17 +749,16 @@
                 <div class="prices__card_content">
                   <h4 class="prices__card_title">Повторный прием</h4>
                   <div class="prices__card_wpText">
-                    <p class="prices__card_text">Могут быть даны рекомендации и корректировки по лечению. Как на основе
-                      результатов анализов, так и в результате повторного осмотра после начала лечения.
+                    <p class="prices__card_text">Контроль динамики процесса на фоне лечения, оценка результатов
+                      лабораторных исследований и сторонних консультаций,
+                      коррекция схемы лечения, могут быть рекомендованы лечебные процедуры.
                     </p>
-                    <p class="prices__card_text">Могут быть проведены дополнительные диагностические процедуры, лечебные
-                      манипуляции.</p>
                   </div>
                   <div class="prices__card_bottom">
                     <span class="prices__card_name">Рудин Лев Борисович</span>
-                    <span class="prices__card_price"><b>3 000</b>₽</span>
+                    <span class="prices__card_price"><b>3 500</b>₽</span>
                     <span class="prices__card_name">Казарина Ольга Витальевна</span>
-                    <span class="prices__card_price"><b>3 000 </b>₽</span>
+                    <span class="prices__card_price"><b>3 500 </b>₽</span>
                   </div>
                 </div>
               </div>
@@ -777,11 +784,12 @@
                 </div>
               </div>
               <form class="record__form form-record" data-form="record">
-                <div class="record__form_info">
+                <div class="record__form_unavailable"><span>записаться можно только по телефону</span></div>
+                <div class="record__form_info _none">
                   <img src="img/icons/tabler.png" alt="tabler">
                   <span>через форму онлайн-записи</span>
                 </div>
-                <div class="record__form_row">
+                <div class="record__form_row _none">
                   <div class="record__form_wpInput wpInput">
                     <input type="text" name="name" class="record__form_input input" placeholder="Имя">
                   </div>
@@ -790,8 +798,8 @@
                       placeholder="Телефон">
                   </div>
                 </div>
-                <button type="submit" class="record__form_button button hover">Записаться</button>
-                <label class="record__form_bottom wpCheckbox-label">
+                <button type="submit" class="record__form_button button hover _none">Записаться</button>
+                <label class="record__form_bottom wpCheckbox-label _none">
                   <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
                   <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
                   <p class="record__form_text">согласен на обработку персональных данных</p>
@@ -920,7 +928,7 @@
               <!-- <img src="img/map.png" alt="map"> -->
               <div id="map" class="yandex-mapper">
                 <script type="text/javascript" charset="utf-8" async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8cde998a4ff33b60fbc91853509499b95c0408c4ca67b87ef399293d64700e59&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true&_v=20231214195604"></script>
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8cde998a4ff33b60fbc91853509499b95c0408c4ca67b87ef399293d64700e59&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true&_v=20231223204038"></script>
               </div>
             </div>
           </div>
@@ -928,44 +936,45 @@
       </section>
 
       <section class="record section">
-  <div class="record__container _container">
-    <div class="record__body">
-      <div class="record__content">
-        <div class="record__block">
-          <h4 class="record__title">Записаться на прием</h4>
-          <span>Вы можете записаться по телефону</span>
-          <div class="record__block-bottom">
-            <svg class='icon'>
-              <use xlink:href='img/svg/sprite.svg#tel'></use>
-            </svg>
-            <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+        <div class="record__container _container">
+          <div class="record__body">
+            <div class="record__content">
+              <div class="record__block">
+                <h4 class="record__title">Записаться на прием</h4>
+                <span>Вы можете записаться по телефону</span>
+                <div class="record__block-bottom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#tel'></use>
+                  </svg>
+                  <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+                </div>
+              </div>
+              <form class="record__form form-record" data-form="record">
+                <div class="record__form_unavailable"><span>записаться можно только по телефону</span></div>
+                <div class="record__form_info _none">
+                  <img src="img/icons/tabler.png" alt="tabler">
+                  <span>через форму онлайн-записи</span>
+                </div>
+                <div class="record__form_row _none">
+                  <div class="record__form_wpInput wpInput">
+                    <input type="text" name="name" class="record__form_input input" placeholder="Имя">
+                  </div>
+                  <div class="record__form_wpInput wpInput">
+                    <input type="tel" name="phone" class="record__form_input input" inputmode="tel"
+                      placeholder="Телефон">
+                  </div>
+                </div>
+                <button type="submit" class="record__form_button button hover _none">Записаться</button>
+                <label class="record__form_bottom wpCheckbox-label _none">
+                  <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+                  <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+                  <p class="record__form_text">согласен на обработку персональных данных</p>
+                </label>
+              </form>
+            </div>
           </div>
         </div>
-        <form class="record__form form-record" data-form="record">
-          <div class="record__form_unavailable"><span>записаться можно только по телефону</span></div>
-          <div class="record__form_info _none">
-            <img src="img/icons/tabler.png" alt="tabler">
-            <span>через форму онлайн-записи</span>
-          </div>
-          <div class="record__form_row _none">
-            <div class="record__form_wpInput wpInput">
-              <input type="text" name="name" class="record__form_input input" placeholder="Имя">
-            </div>
-            <div class="record__form_wpInput wpInput">
-              <input type="tel" name="phone" class="record__form_input input" inputmode="tel" placeholder="Телефон">
-            </div>
-          </div>
-          <button type="submit" class="record__form_button button hover _none">Записаться</button>
-          <label class="record__form_bottom wpCheckbox-label _none">
-            <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
-            <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
-            <p class="record__form_text">согласен на обработку персональных данных</p>
-          </label>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
     </main>
     <footer class="footer">
 	<div class="footer__container _container">
@@ -1149,10 +1158,10 @@
 		</div>
 	</div>
 </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231214195604"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231214195604"></script>
-<script src="assets/libs/fslightbox.js?_v=20231214195604"></script>
-<script src="js/app.min.js?_v=20231214195604"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231223204038"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231223204038"></script>
+<script src="assets/libs/fslightbox.js?_v=20231223204038"></script>
+<script src="js/app.min.js?_v=20231223204038"></script>
 </body>
 
 </html>

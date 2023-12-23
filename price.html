@@ -6,9 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231214195604" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231214195604" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231214195604">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231223204038" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231223204038" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231223204038">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 				<ul class="header__list">
 					<li class="header__item"><a href="about.html" class="header__link link-page">О клинике</a></li>
 					<li class="header__item"><a href="services.html" class="header__link link-page">Услуги</a></li>
-					<li class="header__item"><a href="prices.html" class="header__link link-page">Цены</a></li>
+					<li class="header__item"><a href="price.html" class="header__link link-page">Цены</a></li>
 					<li class="header__item"><a href="articles.html" class="header__link link-page">Статьи</a></li>
 					<li class="header__item"><a href="analyzes.html" class="header__link link-page">Анализы</a></li>
 					<li class="header__item"><a href="media.html" class="header__link link-page">Медиа</a></li>
@@ -109,18 +109,22 @@
             <div class="phoniatry__content">
               <div class="phoniatry__top">
                 <h1 class="phoniatry__title h1">Цены</h1>
-                <a href="#" class="phoniatry__all-price button">Полный прайс-лист</a>
+                <a href="#pricelist" class="phoniatry__all-price button link-navigate">Полный прайс-лист</a>
               </div>
               <div class="phoniatry__block">
-                <h2 class="phoniatry__title-h2 h2">Фониатрия</h2>
                 <div class="phoniatry__wrap-cards">
                   <div class="phoniatry__card">
                     <div class="phoniatry__card_top">
                       <h4 class="phoniatry__card_title">Лев Борисович Рудин</h4>
                       <span class="phoniatry__card_info-span">Первичный приём <br>(осмотр, консультация)</span>
+                      <span class="phoniatry__card_price">от <b>6 500</b> ₽</span>
+                    </div>
+                    <div class="phoniatry__card_top">
+                      <span class="phoniatry__card_info-span">Первичный приём <br>(осмотр, консультация,
+                        фониатрический)</span>
+                      <span class="phoniatry__card_price">от <b>10 500</b> ₽</span>
                     </div>
                     <div class="phoniatry__card_bottom">
-                      <span class="phoniatry__card_price">от 10 500 ₽</span>
                       <a href="#" class="phoniatry__card_link button hover">Подробнее</a>
                     </div>
                     <img src="img/phoniatry-1.png" alt="Картинка" class="phoniatry__card_img">
@@ -129,9 +133,14 @@
                     <div class="phoniatry__card_top">
                       <h4 class="phoniatry__card_title">Казарина Ольга Витальевна</h4>
                       <span class="phoniatry__card_info-span">Первичный приём <br>(осмотр, консультация)</span>
+                      <span class="phoniatry__card_price">от <b>5 000</b> ₽</span>
+                    </div>
+                    <div class="phoniatry__card_top">
+                      <span class="phoniatry__card_info-span">Первичный приём <br>(осмотр, консультация,
+                        фониатрический)</span>
+                      <span class="phoniatry__card_price">от <b>8 000</b> ₽</span>
                     </div>
                     <div class="phoniatry__card_bottom">
-                      <span class="phoniatry__card_price">от 8 000 ₽</span>
                       <a href="#" class="phoniatry__card_link button hover">Подробнее</a>
                     </div>
                     <img src="img/phoniatry-2.png" alt="Картинка" class="phoniatry__card_img">
@@ -156,8 +165,8 @@
                     исследования и клинико-диагностических процедур)</p>
                 </div>
                 <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 4 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <span class="specialization__card_price">от 7 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
@@ -169,8 +178,8 @@
                     исследования и клинико-диагностических процедур) фониатрический</p>
                 </div>
                 <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 5 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <span class="specialization__card_price">от 11 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
@@ -182,8 +191,8 @@
                     исследования и клинико-диагностических процедур)</p>
                 </div>
                 <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 3 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <span class="specialization__card_price">от 5 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
@@ -195,8 +204,8 @@
                     исследования и клинико-диагностических процедур) фониатрический</p>
                 </div>
                 <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 4 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <span class="specialization__card_price">от 8 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
@@ -207,8 +216,8 @@
                   </p>
                 </div>
                 <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 2 200 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <span class="specialization__card_price">от 3 500 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
@@ -219,187 +228,18 @@
                     оториноларинголога</p>
                 </div>
                 <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 2 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <span class="specialization__card_price">от 4 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
             </div>
-            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+            <a href="#pricelist" class="specialization__link-more button link-navigate">Полный прайс-лист</a>
           </div>
         </div>
       </section>
 
       <section class="specialization therapy section">
-        <div class="specialization__container _container">
-          <div class="specialization__body">
-            <h2 class="specialization__title h1">Терапия</h2>
-            <div class="specialization__content">
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">B01.047.001</span>
-                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 2 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">B01.047.002</span>
-                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-терапевта повторный</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 2 000 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">B04.047.001</span>
-                  <p class="specialization__card_text">Диспансерный приём (осмотр, консультация) врача-терапевта</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 1 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">B04.047.002</span>
-                  <p class="specialization__card_text">Профилактический приём (осмотр, консультация) врача-терапевта</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 1 000 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">A01.30.026</span>
-                  <p class="specialization__card_text">Опрос (анкетирование) на выявление неинфекционных заболеваний и
-                    факторов риска их развития</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 1 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">A25.09.001</span>
-                  <p class="specialization__card_text">Назначение лекарственных препаратов при заболеваниях нижних
-                    дыхательных путей и лёгочной ткани</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 700 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-            </div>
-            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="specialization ultrasound section">
-        <div class="specialization__container _container">
-          <div class="specialization__body">
-            <h2 class="specialization__title h1">Узи</h2>
-            <div class="specialization__content">
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">A04.01.001</span>
-                  <p class="specialization__card_text">Ультразвуковое исследование мягких тканей (одна анатомическая
-                    зона)</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 1 700 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">A04.04.001</span>
-                  <p class="specialization__card_text">Ультразвуковое исследование сустава</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 2 200 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">A04.04.002</span>
-                  <p class="specialization__card_text">Ультразвуковое исследование сухожилий</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 1 800 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-            </div>
-            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="specialization endocrinology section">
-        <div class="specialization__container _container">
-          <div class="specialization__body">
-            <h2 class="specialization__title h1">Эндокринология</h2>
-            <div class="specialization__content">
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">B01.058.001</span>
-                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-эндокринолога первичный</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 3 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">B01.058.002</span>
-                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-эндокринолога повторный</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 3 000 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">A25.22.001</span>
-                  <p class="specialization__card_text">Назначение лекарственных препаратов при заболеваниях желёз
-                    внутренней секреции</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 1 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-            </div>
-            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="specialization neurology section">
         <div class="specialization__container _container">
           <div class="specialization__body">
             <h2 class="specialization__title h1">Неврология</h2>
@@ -410,8 +250,8 @@
                   <p class="specialization__card_text">Приём (осмотр, консультация) врача-невролога первичный</p>
                 </div>
                 <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 7 000 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <span class="specialization__card_price">от 7 500 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
@@ -421,8 +261,8 @@
                   <p class="specialization__card_text">Приём (осмотр, консультация) врача-невролога повторный</p>
                 </div>
                 <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 5 000 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <span class="specialization__card_price">от 6 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
@@ -432,13 +272,186 @@
                   <p class="specialization__card_text">Диспансерный приём (осмотр, консультация) врача-невролога</p>
                 </div>
                 <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 5 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B04.023.002</span>
+                  <p class="specialization__card_text">Профилактический приём (осмотр, консультация) врача-невролога</p>
+                </div>
+                <div class="specialization__card_bottom">
                   <span class="specialization__card_price">от 4 000 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A25.02.001</span>
+                  <p class="specialization__card_text">Назначение лекарственных препаратов при заболеваниях мышечной
+                    системы</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A25.23.001</span>
+                  <p class="specialization__card_text">Назначение лекарственных препаратов при заболеваниях центральной
+                    нервной системы и головного мозга</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
             </div>
-            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+            <a href="#pricelist" class="specialization__link-more button link-navigate">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization ultrasound section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Процедурный кабинет</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A11.02.002</span>
+                  <p class="specialization__card_text">Внутримышечное введение лекарственных препаратов</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 400 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A11.12.003</span>
+                  <p class="specialization__card_text">Внутривенное введение лекарственных препаратов</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 1 500 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A11.12.003.005</span>
+                  <p class="specialization__card_text">Внутривенное введение лекарственных препаратов капельное</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 3 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#pricelist" class="specialization__link-more button link-navigate">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization endocrinology section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Горло</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.028.001</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л.
+                    Б. первичный (не включает специальных методов
+                    исследования и клинико-диагностических процедур)</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 7 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.028.001.002</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-оториноларинголога Казариной
+                    О. В. первичный (не включает специальных методов
+                    исследования и клинико-диагностических процедур)</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 5 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">B01.028.002</span>
+                  <p class="specialization__card_text">Приём (осмотр, консультация) врача-оториноларинголога повторный
+                  </p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 3 500 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#pricelist" class="specialization__link-more button link-navigate">Полный прайс-лист</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialization neurology section">
+        <div class="specialization__container _container">
+          <div class="specialization__body">
+            <h2 class="specialization__title h1">Нос</h2>
+            <div class="specialization__content">
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A03.08.004.001</span>
+                  <p class="specialization__card_text">Эндоскопическая эндоназальная ревизия полости носа, носоглотки и
+                    околоносовых пазух</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 4 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A11.08.004</span>
+                  <p class="specialization__card_text">Пункция околоносовых пазух</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 4 500 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A11.08.020</span>
+                  <p class="specialization__card_text">Анемизация слизистой носа</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 500 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+            </div>
+            <a href="#pricelist" class="specialization__link-more button link-navigate">Полный прайс-лист</a>
           </div>
         </div>
       </section>
@@ -446,48 +459,48 @@
       <section class="specialization treatment-room section">
         <div class="specialization__container _container">
           <div class="specialization__body">
-            <h2 class="specialization__title h1">Процедурный кабинет</h2>
+            <h2 class="specialization__title h1">Ухо</h2>
             <div class="specialization__content">
               <div class="specialization__card">
                 <div class="specialization__card_top">
-                  <span class="specialization__card_article">B01.023.001</span>
-                  <p class="specialization__card_text">Капельница</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 2 500 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">B01.023.002</span>
-                  <p class="specialization__card_text">Внутримышечная инъекция</p>
-                </div>
-                <div class="specialization__card_bottom">
-                  <span class="specialization__card_price">от 400 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
-                </div>
-                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
-              </div>
-              <div class="specialization__card">
-                <div class="specialization__card_top">
-                  <span class="specialization__card_article">B04.023.001</span>
-                  <p class="specialization__card_text">Внутривенная инъекция</p>
+                  <span class="specialization__card_article">A03.25.003</span>
+                  <p class="specialization__card_text">Исследование органов слуха с помощью камертона</p>
                 </div>
                 <div class="specialization__card_bottom">
                   <span class="specialization__card_price">от 1 000 ₽</span>
-                  <button class="specialization__card_button button hover">Записаться</button>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A03.25.004</span>
+                  <p class="specialization__card_text">Определение проходимости евстахиевой трубы</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 500 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
+                </div>
+                <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
+              </div>
+              <div class="specialization__card">
+                <div class="specialization__card_top">
+                  <span class="specialization__card_article">A12.25.006</span>
+                  <p class="specialization__card_text">Исследование функций слуховой трубы (ETF-тест) (одно ухо)</p>
+                </div>
+                <div class="specialization__card_bottom">
+                  <span class="specialization__card_price">от 3 000 ₽</span>
+                  <button class="specialization__card_button modal-btn-active button hover">Записаться</button>
                 </div>
                 <img src="img/icons/decor-5.png" alt="Иконка" class="specialization__card_img-bg">
               </div>
             </div>
-            <a href="#" class="specialization__link-more button">Полный прайс-лист</a>
+            <a href="#pricelist" class="specialization__link-more button link-navigate">Полный прайс-лист</a>
           </div>
         </div>
       </section>
 
-      <section class="pricelist section">
+      <section class="pricelist section" id="pricelist">
         <div class="pricelist__container _container">
           <div class="pricelist__body">
             <div class="pricelist__top">
@@ -518,19 +531,40 @@
                 </div>
                 <div class="pricelist__accordion_content _my-accordion-content">
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">A01.30.015</span>
+                    <p class="text">Составление родословной</p>
+                    <span class="price">1 500 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">B04.070.003</span>
+                    <p class="text">Индивидуальное углублённое профилактическое консультирование по коррекции факторов
+                      риска развития неинфекционных
+                      заболеваний первичное (каждые 15 минут)</p>
+                    <span class="price">3 000 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">A02.12.002</span>
+                    <p class="text">Измерение артериального давления на периферических артериях</p>
+                    <span class="price">300 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A12.26.012</span>
+                    <p class="text">Проведение пробы с лекарственными препаратами</p>
+                    <span class="price">500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A23.30.057</span>
+                    <p class="text">Выполнение лечебно-профилактических или диагностических мероприятий с применением
+                      лекарственных препаратов и / или
+                      изделий медицинского назначения</p>
+                    <span class="price">*</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A23.30.057</span>
+                    <p class="text">Стоимость услуги A23.30.057 складывается из себестоимости лекарственных препаратов и
+                      изделий медицинского назначения,
+                      увеличенной на 35%, и стоимости применяемой услуги настоящего Прейскуранта.</p>
+                    <span class="price">*</span>
                   </div>
                 </div>
               </div>
@@ -544,25 +578,48 @@
                 </div>
                 <div class="pricelist__accordion_content _my-accordion-content">
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">B01.028.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л. Б. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур)</p>
+                    <span class="price">7 000 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">B01.028.001.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л. Б. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур) фониатрический</p>
+                    <span class="price">11 000 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">B01.028.001.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Казариной О. В. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур)</p>
+                    <span class="price">5 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.001.003</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Казариной О. В. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур) фониатрический</p>
+                    <span class="price">8 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога повторный</p>
+                    <span class="price">3 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B04.028.002</span>
+                    <p class="text">Профилактический приём (осмотр, консультация) врача- оториноларинголога</p>
+                    <span class="price">4 000 ₽</span>
                   </div>
                 </div>
               </div>
               <div class="pricelist__accordion _my-accordion">
                 <div class="pricelist__accordion_controll _my-accordion-controler">
-                  <span>Терапия</span>
+                  <span>Фониатрия</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
                     <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
@@ -570,58 +627,110 @@
                 </div>
                 <div class="pricelist__accordion_content _my-accordion-content">
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="article">B01.028.001.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л. Б. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур) фониатрический</p>
+                    <span class="price">11 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.001.003</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Казариной О. В. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур) фониатрический</p>
+                    <span class="price">8 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога повторный</p>
+                    <span class="price">3 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B04.028.002</span>
+                    <p class="text">Профилактический приём (осмотр, консультация) врача- оториноларинголога</p>
+                    <span class="price">4 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A02.08.001.001</span>
+                    <p class="text">Использование видеотехнологии при эндоскопии ЛОР органов</p>
+                    <span class="price">1 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A03.08.001</span>
+                    <p class="text">Ларингоскопия</p>
+                    <span class="price">2 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A03.08.001.001</span>
+                    <p class="text">Ларингоэндоскопия</p>
+                    <span class="price">3 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A03.08.001.002</span>
+                    <p class="text">Ларингоскопия с использованием стробоскопа</p>
+                    <span class="price">6 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.08.019</span>
+                    <p class="text">Эндоларингеальное введение лекарственных препаратов</p>
+                    <span class="price">5 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">А04.08.003</span>
+                    <p class="text">Электроглоттография</p>
+                    <span class="price">4 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">А04.08.005</span>
+                    <p class="text">Акустический анализ голоса (один тест)</p>
+                    <span class="price">3 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">А04.08.005.001</span>
+                    <p class="text">Акустический анализ голоса комплексный (3 теста)</p>
+                    <span class="price">7 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">А04.08.005.002</span>
+                    <p class="text">Акустический анализ голоса комплексный (4-5 тестов)</p>
+                    <span class="price">10 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A17.02.001.001</span>
+                    <p class="text">Нервно-мышечная электрофониатрическая стимуляция</p>
+                    <span class="price">1 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A17.08.003</span>
+                    <p class="text">Аэрозольтерапия при заболеваниях верхних дыхательных путей</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">А23.08.001</span>
+                    <p class="text">Фонопедическое занятие (за каждые 15 минут)</p>
                     <span class="price">2 500 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта повторный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">A25.08.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях верхних дыхательных путей</p>
+                    <span class="price">1 000 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Диспансерный приём (осмотр, консультация) врача-терапевта</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">A25.08.002</span>
+                    <p class="text">Назначение диетического питания при заболеваниях верхних дыхательных путей</p>
+                    <span class="price">1 000 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Профилактический приём (осмотр, консультация) врача-терапевта</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Опрос (анкетирование) на выявление неинфекционных заболеваний и факторов риска их
-                      развития</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Назначение лекарственных препаратов при заболеваниях нижних дыхательных путей и
-                      лёгочной ткани</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Назначение диетического питания при заболеваниях нижних дыхательных путей и лёгочной
-                      ткани</p>
-                    <span class="price">700 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Назначение лекарственных препаратов при заболеваниях сердца и перикарда</p>
-                    <span class="price">700 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Назначение лекарственных препаратов при заболеваниях сердца и перикарда</p>
-                    <span class="price">700 ₽</span>
+                    <span class="article">A25.08.003</span>
+                    <p class="text">Назначение лечебно-оздоровительного режима при заболеваниях верхних дыхательных
+                      путей</p>
+                    <span class="price">1 000 ₽</span>
                   </div>
                 </div>
               </div>
               <div class="pricelist__accordion _my-accordion">
                 <div class="pricelist__accordion_controll _my-accordion-controler">
-                  <span>Эндокринология</span>
+                  <span>Ухо</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
                     <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
@@ -629,19 +738,287 @@
                 </div>
                 <div class="pricelist__accordion_content _my-accordion-content">
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="article">B01.028.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л. Б. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур)</p>
+                    <span class="price">7 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.001.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Казариной О. В. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур)</p>
+                    <span class="price">5 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога повторный</p>
+                    <span class="price">3 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B04.028.002</span>
+                    <p class="text">Профилактический приём (осмотр, консультация) врача- оториноларинголога</p>
+                    <span class="price">4 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A03.25.005</span>
+                    <p class="text">Отоэндоскопия</p>
                     <span class="price">2 500 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="article">A03.25.003</span>
+                    <p class="text">Исследование органов слуха с помощью камертона</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A03.25.004</span>
+                    <p class="text">Определение проходимости евстахиевой трубы</p>
+                    <span class="price">500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.25.002</span>
+                    <p class="text">Введение лекарственных препаратов в наружный слуховой проход</p>
+                    <span class="price">500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A12.25.001</span>
+                    <p class="text">Тональная аудиометрия</p>
+                    <span class="price">3 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A12.25.002</span>
+                    <p class="text">Речевая аудиометрия</p>
+                    <span class="price">3 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A12.25.005</span>
+                    <p class="text">Импедансометрия (одно ухо)</p>
+                    <span class="price">3 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A12.25.006</span>
+                    <p class="text">Исследование функций слуховой трубы (ETF-тест) (одно ухо)</p>
+                    <span class="price">3 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A12.25.007</span>
+                    <p class="text">Тимпанометрия (одно ухо)</p>
                     <span class="price">2 500 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <span class="article">A16.01.016</span>
+                    <p class="text">Удаление атеромы</p>
+                    <span class="price">3 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.25.007.001</span>
+                    <p class="text">Удаление ушной серы (первой степени сложности) (одно ухо)</p>
+                    <span class="price">2 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.25.007.002</span>
+                    <p class="text">Удаление ушной серы (второй степени сложности) (одно ухо)</p>
                     <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.25.008</span>
+                    <p class="text">Удаление инородного тела из слухового отверстия</p>
+                    <span class="price">2 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.25.012</span>
+                    <p class="text">Продувание слуховой трубы</p>
+                    <span class="price">800 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.25.036.001</span>
+                    <p class="text">Катетеризация слуховой трубы с введением лекарственных препаратов</p>
+                    <span class="price">4 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.25.040</span>
+                    <p class="text">Промывание наружного слухового прохода с антисептиком</p>
+                    <span class="price">1 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A21.25.002</span>
+                    <p class="text">Массаж барабанных перепонок</p>
+                    <span class="price">1 200 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.25.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях органа слуха</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Горло</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л. Б. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур)</p>
+                    <span class="price">7 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.001.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Казариной О. В. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур)</p>
+                    <span class="price">5 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога повторный</p>
+                    <span class="price">3 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.08.016.001</span>
+                    <p class="text">Промывание лакун миндалин с хлоргексидином или фурацилином</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.08.016.002</span>
+                    <p class="text">Промывание лакун миндалин с мирамистином</p>
+                    <span class="price">3 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A16.08.049</span>
+                    <p class="text">Вскрытие ретенционной кисты нёбной миндалины</p>
+                    <span class="price">500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.08.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях верхних дыхательных путей</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.08.002</span>
+                    <p class="text">Назначение диетического питания при заболеваниях верхних дыхательных путей</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.08.003</span>
+                    <p class="text">Назначение лечебно-оздоровительного режима при заболеваниях верхних дыхательных
+                      путей</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricelist__accordion _my-accordion">
+                <div class="pricelist__accordion_controll _my-accordion-controler">
+                  <span>Нос</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
+                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="pricelist__accordion_content _my-accordion-content">
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Рудина Л. Б. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур)</p>
+                    <span class="price">7 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.001.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога Казариной О. В. первичный (не
+                      включает специальных методов
+                      исследования и клинико-диагностических процедур)</p>
+                    <span class="price">5 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.028.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-оториноларинголога повторный</p>
+                    <span class="price">3 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B04.028.002</span>
+                    <p class="text">Профилактический приём (осмотр, консультация) врача- оториноларинголога</p>
+                    <span class="price">4 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A03.08.004.001</span>
+                    <p class="text">Эндоскопическая эндоназальная ревизия полости носа, носоглотки и околоносовых пазух
+                    </p>
+                    <span class="price">4 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.08.004</span>
+                    <p class="text">Пункция околоносовых пазух</p>
+                    <span class="price">4 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.08.020</span>
+                    <p class="text">Анемизация слизистой носа</p>
+                    <span class="price">500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.08.021.001</span>
+                    <p class="text">Промывание околоносовых пазух и носа методом вакуумного перемещения</p>
+                    <span class="price">2 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.08.021.002</span>
+                    <p class="text">Промывание околоносовых пазух и носа методом вакуумного перемещения в модификации по
+                      Зандерману</p>
+                    <span class="price">3 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.08.023</span>
+                    <p class="text">Инстилляция лекарственных препаратов при заболеваниях верхних дыхательных путей</p>
+                    <span class="price">400 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A12.08.003.001</span>
+                    <p class="text">Передняя активная риноманометрия</p>
+                    <span class="price">3 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A12.08.003.002</span>
+                    <p class="text">Передняя активная риноманометрия до и после анемизации носа</p>
+                    <span class="price">5 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.08.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях верхних дыхательных путей</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.08.002</span>
+                    <p class="text">Назначение диетического питания при заболеваниях верхних дыхательных путей</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.08.003</span>
+                    <p class="text">Назначение лечебно-оздоровительного режима при заболеваниях верхних дыхательных
+                      путей</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.27.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях органа обоняния</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.003.004.004</span>
+                    <p class="text">Аппликационная анестезия</p>
+                    <span class="price">500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.003.004.005</span>
+                    <p class="text">Инфильтрационная анестезия</p>
+                    <span class="price">1 000 ₽</span>
                   </div>
                 </div>
               </div>
@@ -655,19 +1032,46 @@
                 </div>
                 <div class="pricelist__accordion_content _my-accordion-content">
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">B01.023.001</span>
+                    <p class="text">Приём (осмотр, консультация) врача-невролога первичный</p>
+                    <span class="price">7 500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B01.023.002</span>
+                    <p class="text">Приём (осмотр, консультация) врача-невролога повторный</p>
+                    <span class="price">6 000 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
                     <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
+                    <p class="text">Диспансерный приём (осмотр, консультация) врача-терапевта</p>
                     <span class="price">2 500 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">B04.023.001</span>
+                    <p class="text">Диспансерный приём (осмотр, консультация) врача-невролога</p>
+                    <span class="price">5 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">B04.023.002</span>
+                    <p class="text">Профилактический приём (осмотр, консультация) врача-невролога</p>
+                    <span class="price">4 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.02.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях мышечной системы</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.23.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях центральной нервной системы и
+                      головного мозга</p>
+                    <span class="price">1 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A25.24.001</span>
+                    <p class="text">Назначение лекарственных препаратов при заболеваниях периферической нервной системы
+                    </p>
+                    <span class="price">1 000 ₽</span>
                   </div>
                 </div>
               </div>
@@ -681,74 +1085,33 @@
                 </div>
                 <div class="pricelist__accordion_content _my-accordion-content">
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">A11.02.002</span>
+                    <p class="text">Внутримышечное введение лекарственных препаратов</p>
+                    <span class="price">400 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">A11.12.003</span>
+                    <p class="text">Внутривенное введение лекарственных препаратов</p>
+                    <span class="price">1 500 ₽</span>
                   </div>
                   <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
+                    <span class="article">A11.12.009</span>
+                    <p class="text">Взятие крови из периферической вены</p>
+                    <span class="price">500 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.12.003.005</span>
+                    <p class="text">Внутривенное введение лекарственных препаратов капельное</p>
+                    <span class="price">3 000 ₽</span>
+                  </div>
+                  <div class="pricelist__accordion_row">
+                    <span class="article">A11.12.003.006</span>
+                    <p class="text">Внутривенное введение лекарственных препаратов болюсное</p>
+                    <span class="price">1 000 ₽</span>
                   </div>
                 </div>
               </div>
-              <div class="pricelist__accordion _my-accordion">
-                <div class="pricelist__accordion_controll _my-accordion-controler">
-                  <span>Ультразвуковая диагностика</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
-                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <div class="pricelist__accordion_content _my-accordion-content">
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pricelist__accordion _my-accordion">
-                <div class="pricelist__accordion_controll _my-accordion-controler">
-                  <span>Психология</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" fill="none">
-                    <path d="M10 1L5.5 5L1 1" stroke="#24272B" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <div class="pricelist__accordion_content _my-accordion-content">
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                  <div class="pricelist__accordion_row">
-                    <span class="article">B01.047.001</span>
-                    <p class="text">Приём (осмотр, консультация) врача-терапевта первичный</p>
-                    <span class="price">2 500 ₽</span>
-                  </div>
-                </div>
-              </div>
+
               <div class="pricelist__content-not-found" data-height="250">
                 <span>ничего не найдено</span>
               </div>
@@ -781,7 +1144,7 @@
               <!-- <img src="img/map.png" alt="map"> -->
               <div id="map" class="yandex-mapper">
                 <script type="text/javascript" charset="utf-8" async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8cde998a4ff33b60fbc91853509499b95c0408c4ca67b87ef399293d64700e59&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true&_v=20231214195604"></script>
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8cde998a4ff33b60fbc91853509499b95c0408c4ca67b87ef399293d64700e59&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true&_v=20231223204038"></script>
               </div>
             </div>
           </div>
@@ -789,44 +1152,46 @@
       </section>
 
       <section class="record section">
-  <div class="record__container _container">
-    <div class="record__body">
-      <div class="record__content">
-        <div class="record__block">
-          <h4 class="record__title">Записаться на прием</h4>
-          <span>Вы можете записаться по телефону</span>
-          <div class="record__block-bottom">
-            <svg class='icon'>
-              <use xlink:href='img/svg/sprite.svg#tel'></use>
-            </svg>
-            <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+        <div class="record__container _container">
+          <div class="record__body">
+            <div class="record__content">
+              <div class="record__block">
+                <h4 class="record__title">Записаться на прием</h4>
+                <span>Вы можете записаться по телефону</span>
+                <div class="record__block-bottom">
+                  <svg class='icon'>
+                    <use xlink:href='img/svg/sprite.svg#tel'></use>
+                  </svg>
+                  <a href="tel:74957269760" class="record__tel">+7 (495) 726-97-60</a>
+                </div>
+              </div>
+              <form class="record__form form-record" data-form="record">
+                <div class="record__form_unavailable _none"><span>записаться можно только по телефону</span></div>
+                <div class="record__form_info">
+                  <img src="img/icons/tabler.png" alt="tabler">
+                  <span>через форму онлайн-записи <i>*</i></span>
+                </div>
+                <div class="record__form_row">
+                  <div class="record__form_wpInput wpInput">
+                    <input type="text" name="name" class="record__form_input input" placeholder="Имя">
+                  </div>
+                  <div class="record__form_wpInput wpInput">
+                    <input type="tel" name="phone" class="record__form_input input" inputmode="tel"
+                      placeholder="Телефон">
+                  </div>
+                </div>
+                <button type="submit" class="record__form_button button hover">Записаться</button>
+                <label class="record__form_bottom wpCheckbox-label">
+                  <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
+                  <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
+                  <p class="record__form_text">согласен на обработку персональных данных</p>
+                </label>
+              </form>
+            </div>
+            <div class="record__bottom"><i>*</i> Записать на прием врача фониатра можно только по телефону</div>
           </div>
         </div>
-        <form class="record__form form-record" data-form="record">
-          <div class="record__form_unavailable"><span>записаться можно только по телефону</span></div>
-          <div class="record__form_info _none">
-            <img src="img/icons/tabler.png" alt="tabler">
-            <span>через форму онлайн-записи</span>
-          </div>
-          <div class="record__form_row _none">
-            <div class="record__form_wpInput wpInput">
-              <input type="text" name="name" class="record__form_input input" placeholder="Имя">
-            </div>
-            <div class="record__form_wpInput wpInput">
-              <input type="tel" name="phone" class="record__form_input input" inputmode="tel" placeholder="Телефон">
-            </div>
-          </div>
-          <button type="submit" class="record__form_button button hover _none">Записаться</button>
-          <label class="record__form_bottom wpCheckbox-label _none">
-            <input type="checkbox" name="privacy-policy" class="input-checkbox" id="privacy-policy" checked>
-            <label for="privacy-policy" class="record__form_checkbox-label checkbox-label"></label>
-            <p class="record__form_text">согласен на обработку персональных данных</p>
-          </label>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
     </main>
     <footer class="footer">
 	<div class="footer__container _container">
@@ -1010,10 +1375,10 @@
 		</div>
 	</div>
 </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231214195604"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231214195604"></script>
-<script src="assets/libs/fslightbox.js?_v=20231214195604"></script>
-<script src="js/app.min.js?_v=20231214195604"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231223204038"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231223204038"></script>
+<script src="assets/libs/fslightbox.js?_v=20231223204038"></script>
+<script src="js/app.min.js?_v=20231223204038"></script>
 </body>
 
 </html>
